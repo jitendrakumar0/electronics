@@ -1,7 +1,81 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
-        
+        .productDetails {
+            & .productImagSide {
+                & .productImgSlider {
+                    & .owl-nav {
+                        display: none;
+                    }
+                    & .owl-dots {
+                    }
+                }
+            }
+            & .productFullDetails {
+                & .contantsDetails {
+                    & .moreProduct {
+                        & a {
+                            font-size: 12px;
+                        }
+                    }
+                    & .productNmae {
+                        font-size: 30px;
+                    }
+                    & .rating {
+                        & .ratingList {
+                        }
+                        & .customerRating {
+                            font-size: 12px;
+                        }
+                    }
+                    & .productFithur {
+                        & ul {
+                            & li {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    & .productDiscuription {
+                        font-size: 14px;
+                    }
+                    & .productCode {
+                        font-size: 16px;
+                    }
+                }
+                & .offerDetails {
+                    & .availabilityProduct {
+                        font-size: 14px;
+                        border-bottom: 1px solid rgba($secondary, 0.2);
+                    }
+                    & .productValue {
+                        font-size: 25px;
+                    }
+                    & .chouseInputBtn {
+                        &  input{
+                            max-width: 100px;
+                            font-size: 14px;
+                        }
+                    }
+                    & .addCart {
+                        & .addCartBtn {
+                            font-size: 14px;
+                            transition: all ease-in-out 0.3s;
+                            &:hover{
+                                background-color: $black;
+                            }
+                        }
+                    }
+                    & .morebuttons {
+                        & a {
+                            font-size: 12px;
+                            & img {
+                                width: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`

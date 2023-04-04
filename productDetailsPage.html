@@ -98,7 +98,7 @@
 
         <!-- style -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets">
+        <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
@@ -108,21 +108,54 @@
                 <div class="col-12 px-0 flex-fill" data-page-name="landing">
                     <div class="container">
                         <div class="row mx-0 productDetails  py-5">
-                            <div class="col-5">
-                                
+                            <div class="col-xl-4 productImagSide">
+                                <div class="owl-carousel productImgSlider">
+                                    <div class="item"><div class="productImg"><img src="assets/img/product/headphone.png" class="w-100" alt=""></div></div>
+                                    <div class="item"><div class="productImg"><img src="assets/img/product/headphone.png" class="w-100" alt=""></div></div>
+                                    <div class="item"><div class="productImg"><img src="assets/img/product/headphone.png" class="w-100" alt=""></div></div>
+                                    <div class="item"><div class="productImg"><img src="assets/img/product/headphone.png" class="w-100" alt=""></div></div>
+                                    <div class="item"><div class="productImg"><img src="assets/img/product/headphone.png" class="w-100" alt=""></div></div>
+                                    <div class="item"><div class="productImg"><img src="assets/img/product/headphone.png" class="w-100" alt=""></div></div>
+                                </div>
                             </div>
-                            <div class="col-5">
-                                <div class="moreProduct mb-3"><a href="javascript:;" class="text-decoration-none text-secondary">Headphones</a></div>
-                                <div class="productNmae text-black fw-medium fs-3 lh-sm mb-3">Ultra Wireless S50 Headphones S50 with Bluetooth</div>
-                                <div class="rating d-flex align-items-center gap-2">
-                                    <ul class="list-unstyled d-flex align-items-center m-0">
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-theme1" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg></li>
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-theme1" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg></li>
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-theme1" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg></li>
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-theme1" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg></li>
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half text-theme1" viewBox="0 0 16 16"><path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/></svg></li>
-                                    </ul>
-                                    <a href="javascript:;" class="text-decoration-none text-secondary fs-6">(3 customer reviews)</a>
+                            <div class="col-xl-8 px-0 mx-0 row productFullDetails align-items-center">
+                                <div class="col-md-8 contantsDetails">
+                                    <div class="moreProduct mb-3"><a href="javascript:;" class="text-decoration-none text-secondary">Headphones</a></div>
+                                    <div class="productNmae text-black fw-normal lh-sm mb-3">Ultra Wireless S50 Headphones S50 with Bluetooth</div>
+                                    <div class="rating d-flex align-items-center gap-2">
+                                        <ul class="list-unstyled d-flex align-items-center m-0 ratingList">
+                                            <li><img src="assets/img/svg/starFill.svg" alt=""></li>
+                                            <li><img src="assets/img/svg/starFill.svg" alt=""></li>
+                                            <li><img src="assets/img/svg/starFill.svg" alt=""></li>
+                                            <li><img src="assets/img/svg/starFill.svg" alt=""></li>
+                                            <li><img src="assets/img/svg/star-halfFilll.svg" alt=""></li>
+                                        </ul>
+                                        <a href="javascript:;" class="text-decoration-none text-secondary customerRating">(3 customer reviews)</a>
+                                    </div>
+                                    <div class="productFithur mt-4 mb-3">
+                                        <ul class="m-0">
+                                            <li class="mb-1 text-secondary">4.5 inch HD Touch Screen (1280 x 720)</li>
+                                            <li class="mb-1 text-secondary">Android 4.4 KitKat OS</li>
+                                            <li class="mb-1 text-secondary">1.4 GHz Quad Core™ Processor</li>
+                                            <li class="mb-1 text-secondary">20 MP front and 28 megapixel CMOS rear camera</li>
+                                        </ul>
+                                    </div>
+                                    <div class="productDiscuription text-secondary fw-medium mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+                                    <div class="productCode text-secondary"><strong>SKU:</strong> FW511948218</div>
+                                </div>
+                                <div class="col-md-4 mt-md-0 mt-4 offerDetails">
+                                    <div class="card border border-2 border-secondary-subtle rounded-4">
+                                        <div class="card-body">
+                                            <div class="availabilityProduct pb-2">Availability: <span class="fw-bold text-success">57 in stock</span></div>
+                                            <div class="productValue my-3">$350.00</div>
+                                            <div class="chouseInputBtn mb-3"><input type="number" class="form-control shadow-none rounded-pill border border-1 border-secondary-subtle" value="1" maxlength="1" name="" id=""></div>
+                                            <div class="addCart mb-3"><a href="javascript::;" class="text-decoration-none addCartBtn border-0 btn btn-theme1 text-white rounded-pill btn-lg fw-bold w-100 d-flex align-items-center justify-content-center gap-1"><img src="assets/img/svg/Cart.svg" alt=""> Add to cart</a></div>
+                                            <div class="d-flex align-items-center justify-content-around morebuttons">
+                                                <a href="javascript:;" class="text-black d-flex align-items-center gap-1 "><img src="assets/img/svg/Heart.svg" alt=""> Wishlist</a>
+                                                <a href="javascript:;" class="text-black d-flex align-items-center gap-1 "><img src="assets/img/svg/compare.svg" alt=""> Compare</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -131,6 +164,7 @@
             </div>
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
     </body>
 </html>
