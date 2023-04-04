@@ -1,6 +1,33 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-// [data-page-name=example] {
     @include media-breakpoint(basic) {
+        .productCard {
+            background-color: $white;
+            padding: 1.429em 1.714em 1em;
+            &.productBorderCard {
+                border: 1px solid #f4f4f4;
+            }
+            & .productCategory {
+                font-size: .857em;
+                line-height: 1.05em;
+                color: $gray-700;
+            }
+            & .productName {
+                font-size: 1em;
+                line-height: 1.28572em;
+                color: $theme3;
+                font-weight: 700;
+            }
+            & .productImage {
+                & img {
+                    width: 100%;
+                }
+            }
+            & .productOldPrice {}
+            & .productPrice {}
+            & .iconBox {
+                & img {}
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -24,7 +51,7 @@
     @include media-breakpoint-down(md) {}
 
     @include media-breakpoint-down(sm) {}
-// }
+
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
