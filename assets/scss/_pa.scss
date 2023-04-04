@@ -1,6 +1,108 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        // breadcrumb start
+        .breadcrumbFluid{
+            & .breadcrumbContainer{
+                & .productListingBreadcrumb{
+                    padding: 20px 0 15px 0;
+                    & .productListingItem{
+                        font-size: .875rem;
+                        font-weight: 400;
+                        &::before{
+                            margin: 0 1.429em;
+                        }
+                        & .productBreadcrumbAnchor{
+                            color: $gray-700 !important;
+                        }
+                    }
+                }
+            }
+        }
+        // productListing start
+        .productListingFluid{
+            & .productListingContainer{
+                & .prodcutListingTopBox{
+                    border: 1px solid $gray-200;
+                    border-radius: 6px;
+                    & .allCategoriesAccordion{
+                        & .productAccordion{
+                            & .productAccordionItem{
+                                background-color: transparent !important;
+                                border: unset !important;
+                                & .productAccordionHeader{
+                                    border-bottom: 1px solid$gray-200;
+                                    & .productAccordionBtn{
+                                        padding: 1.06em 2em;
+                                        font-size: 14px;
+                                        &:focus{
+                                            box-shadow: none;
+                                            border-color: white !important;
+                                        }
+                                        &:not(.collpased){
+                                            background-color: transparent !important;
+                                            box-shadow: unset !important;
+                                            color: $gray-700 ;
+                                        }
+                                        &::after{
+                                            // display: none;
+                                            background: url(../img/svg/rytarrowgray.svg);
+                                            opacity: 0.9;
+                                            background-repeat: no-repeat;
+                                            margin-left: 9px;
+                                        }
+                                    }
+                                }
+                                & .productAccordionCollapseDiv{
+                                    & .productAccordionBody{
+
+                                    }
+                                }
+                            }
+                        }
+                        }
+                        & .productListingBottomPart{
+                            padding: .929em;
+                            font-size: 14px;
+                            color: $gray-700 ;
+                            & .productListingBottomTxtOne{
+                                padding-left: 1.071em;
+                                padding-bottom: 0.643em;
+                                border-bottom: 1px solid $gray-200;
+                                color: $gray-700 ;
+                                & span{
+                                    color: $gray-500;
+                                    font-size: 13px;
+                                }
+                            }
+                            & .productListingBottomTxtTwoContainer{
+                                & .one{
+                                    padding-left: 1.071em;
+                                    padding-bottom: 0.643em;
+                                    padding-top: 1em;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    color: $gray-700;
+                                    & span{
+                                        color: $gray-400;
+                                        font-size: 13px;
+                                    }
+                                }
+                                & .two{
+                                    padding-left: 1.071em;
+                                    padding-bottom: 0.643em;
+                                    font-size: 14px;
+                                    color: $gray-700;
+                                    & span{
+                                        color: $gray-500;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
