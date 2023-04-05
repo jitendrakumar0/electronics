@@ -2,77 +2,143 @@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
         .heroSection {
-            background-color: #f6f6f7;
+            background: url('../img/hero-banner/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
             & .sliderSection {
                 & .hero-carousel {
                     position: relative;
-                    & .leftPart {
-                        & .nanoHeading {
-                            line-height: 22px;
-                            letter-spacing: 0px;
-                            font-weight: 600;
-                            font-size: 18px;
-                            font-family: Roboto;
-                            color: rgb(52, 188, 236);
-                            text-transform: uppercase;
-                            margin-bottom: 15px;
-                        }
-                        & .slideHeading {
-                            font-family: Roboto;
-                            color: rgb(51, 62, 72);
-                            line-height: 48px;
-                            letter-spacing: 0px;
-                            font-weight: 300;
-                            font-size: 46px;
-                            margin-bottom: 35px;
-                            & b {
-                                font-weight: 600;
-                            }
-                        }
-                        & .subHeading {
-                            font-family: Roboto;
-                            color: rgb(51, 62, 72);
-                            line-height: 22px;
-                            letter-spacing: 0px;
-                            font-weight: 800;
-                            font-size: 15px;
-                        }
-                        & .productPrize {
-                            font-family: Roboto;
-                            color: rgb(51, 62, 72);
-                            line-height: 52px;
-                            letter-spacing: 0px;
-                            font-weight: 700;
-                            font-size: 56px;
-                            & sup {
-                                font-size: .75em;
-                                line-height: 0;
-                                vertical-align: baseline;
-                            }
-                        }
-                        & .statBuyingSlidBtn {
-                            font-family: Roboto;
-                            color: rgb(51, 62, 72);
-                            line-height: 18px;
-                            letter-spacing: 0px;
-                            font-weight: 300;
-                            font-size: 18px;
-                            border-color: transparent;
-                            padding: 14px 58px;
-                            border-radius: 10px;
-                            background-color: #fed700;
-                            display: inline-block;
-                            &:hover {
-                                background-color: #eac600;
-                            }
-                        }
-                    }
-                    & .rightPart {
-                        & .imgOuter {
-                            height: 422px;
-                            & img {
-                                object-fit: contain;
-                                object-position: bottom center;
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                opacity: 0;
+                                transition: 0.3s ease-in-out;
+                                & .leftPart {
+                                    & .nanoHeading {
+                                        line-height: 22px;
+                                        letter-spacing: 0px;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        color: rgb(52, 188, 236);
+                                        text-transform: uppercase;
+                                        margin-bottom: 15px;
+                                        transform: translateY(-100%);
+                                        opacity: 0;
+                                        transition: all 1.8s ease-in-out;
+                                    }
+                                    & .slideHeading {
+                                        color: rgb(51, 62, 72);
+                                        line-height: 48px;
+                                        letter-spacing: 0px;
+                                        font-weight: 300;
+                                        font-size: 46px;
+                                        margin-bottom: 35px;
+                                        transform: scale(0);
+                                        opacity: 0;
+                                        transition: all 2s ease-in-out;
+                                        & b {
+                                            font-weight: 600;
+                                        }
+                                    }
+                                    & .subHeading {
+                                        color: rgb(51, 62, 72);
+                                        line-height: 22px;
+                                        letter-spacing: 0px;
+                                        font-weight: 800;
+                                        font-size: 15px;
+                                        transform: translateX(100%);
+                                        opacity: 0;
+                                        transition: all 2.5s ease-in-out;
+                                    }
+                                    & .productPrize {
+                                        color: rgb(51, 62, 72);
+                                        line-height: 52px;
+                                        letter-spacing: 0px;
+                                        font-weight: 700;
+                                        font-size: 56px;
+                                        transform: translate(-100%,100%);
+                                        opacity: 0;
+                                        transition: all 2.5s ease-in-out;
+                                        & sup {
+                                            font-size: .75em;
+                                            line-height: 0;
+                                            vertical-align: baseline;
+                                        }
+                                    }
+                                    & .statBuyingSlidBtnOuter {
+                                        transform: translateY(100%);
+                                        opacity: 0;
+                                        transition: all 2.5s ease-in-out;
+                                        & .statBuyingSlidBtn {
+                                            color: rgb(51, 62, 72);
+                                            line-height: 18px;
+                                            letter-spacing: 0px;
+                                            font-weight: 300;
+                                            font-size: 18px;
+                                            border-color: transparent;
+                                            padding: 14px 58px;
+                                            border-radius: 10px;
+                                            background-color: rgb(254, 215, 0);
+                                            display: inline-block;
+                                            transition: all 0.3s ease-in-out;
+                                            &:hover {
+                                                background-color: #eac600;
+                                            }
+                                        }
+                                    }
+                                }
+                                & .rightPart {
+                                    & .imgOuter {
+                                        height: 422px;
+                                        transform: translateY(100%);
+                                        opacity: 0;
+                                        transition: all 2s ease-in-out;
+                                        & img {
+                                            object-fit: contain;
+                                            object-position: bottom center;
+                                        }
+                                        &.imgOuter3 {
+                                            transform: translateX(100%) !important;
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    opacity: 1;
+                                    & .rightPart {
+                                        & .imgOuter {
+                                            transform: translate(0);
+                                            opacity: 1;
+                                            &.imgOuter3 {
+                                                transform: translate(0) !important;
+                                            }
+                                        }
+                                    }
+                                    & .leftPart {
+                                        & .nanoHeading {
+                                            transform: translate(0);
+                                            opacity: 1;
+                                        }
+                                        & .slideHeading {
+                                            transform: scale(1);
+                                            opacity: 1;
+                                        }
+                                        & .subHeading {
+                                            transform: translate(0);
+                                            opacity: 1;
+                                        }
+                                        & .productPrize {
+                                            transform: translate(0);
+                                            opacity: 1;
+                                        }
+                                        & .statBuyingSlidBtnOuter {
+                                            transform: translate(0);
+                                            opacity: 1;
+                                            & .statBuyingSlidBtn {
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -111,15 +177,288 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .heroSection {
+            & .sliderSection {
+                & .hero-carousel {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .leftPart {
+                                    & .nanoHeading {
+                                        line-height: 20px;
+                                        font-size: 18px;
+                                    }
+                                    & .slideHeading {
+                                        font-size: 38px;
+                                        line-height: 40px;
+                                        & b {
+                                        }
+                                    }
+                                    & .subHeading {
+                                    }
+                                    & .productPrize {
+                                        font-size: 45px;
+                                        line-height: 45px;
+                                        & sup {
+                                        }
+                                    }
+                                    & .statBuyingSlidBtnOuter {
+                                        & .statBuyingSlidBtn {
+                                            padding: 12px 50px;
+                                            font-size: 17px;
+                                            line-height: 17px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                                & .rightPart {
+                                    & .imgOuter {
+                                        & img {
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    & .rightPart {
+                                        & .imgOuter {
+                                        }
+                                    }
+                                    & .leftPart {
+                                        & .nanoHeading {
+                                        }
+                                        & .slideHeading {
+                                        }
+                                        & .subHeading {
+                                        }
+                                        & .productPrize {
+                                        }
+                                        & .statBuyingSlidBtn {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .heroSection {
+            & .sliderSection {
+                & .hero-carousel {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .leftPart {
+                                    & .nanoHeading {
+                                    }
+                                    & .slideHeading {
+                                        & b {
+                                        }
+                                    }
+                                    & .subHeading {
+                                    }
+                                    & .productPrize {
+                                        & sup {
+                                        }
+                                    }
+                                    & .statBuyingSlidBtnOuter {
+                                        & .statBuyingSlidBtn {
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                                & .rightPart {
+                                    & .imgOuter {
+                                        & img {
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    & .rightPart {
+                                        & .imgOuter {
+                                        }
+                                    }
+                                    & .leftPart {
+                                        & .nanoHeading {
+                                        }
+                                        & .slideHeading {
+                                        }
+                                        & .subHeading {
+                                        }
+                                        & .productPrize {
+                                        }
+                                        & .statBuyingSlidBtn {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .heroSection {
+            & .sliderSection {
+                & .hero-carousel {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .leftPart {
+                                    & .nanoHeading {
+                                    }
+                                    & .slideHeading {
+                                        & b {
+                                        }
+                                    }
+                                    & .subHeading {
+                                    }
+                                    & .productPrize {
+                                        & sup {
+                                        }
+                                    }
+                                    & .statBuyingSlidBtnOuter {
+                                        & .statBuyingSlidBtn {
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                                & .rightPart {
+                                    & .imgOuter {
+                                        & img {
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    & .rightPart {
+                                        & .imgOuter {
+                                        }
+                                    }
+                                    & .leftPart {
+                                        & .nanoHeading {
+                                        }
+                                        & .slideHeading {
+                                        }
+                                        & .subHeading {
+                                        }
+                                        & .productPrize {
+                                        }
+                                        & .statBuyingSlidBtn {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .heroSection {
+            & .sliderSection {
+                & .hero-carousel {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .leftPart {
+                                    & .nanoHeading {
+                                        font-size: 16px;
+                                        line-height: 18px;
+                                    }
+                                    & .slideHeading {
+                                        font-size: 28px;
+                                        line-height: 30px;
+                                        & b {
+                                        }
+                                    }
+                                    & .subHeading {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                    }
+                                    & .productPrize {
+                                        font-size: 35px;
+                                        line-height: 38px;
+                                        & sup {
+                                        }
+                                    }
+                                    & .statBuyingSlidBtnOuter {
+                                        & .statBuyingSlidBtn {
+                                            padding: 10px 30px;
+                                            font-size: 16px;
+                                            line-height: 16px;
+                                            &:hover {
+                                            }
+                                        }
+                                    }
+                                }
+                                & .rightPart {
+                                    & .imgOuter {
+                                        & img {
+                                        }
+                                    }
+                                }
+                                &.active {
+                                    & .rightPart {
+                                        & .imgOuter {
+                                        }
+                                    }
+                                    & .leftPart {
+                                        & .nanoHeading {
+                                        }
+                                        & .slideHeading {
+                                        }
+                                        & .subHeading {
+                                        }
+                                        & .productPrize {
+                                        }
+                                        & .statBuyingSlidBtn {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-dots {
+                        & .owl-dot {
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {

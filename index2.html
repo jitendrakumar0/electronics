@@ -110,8 +110,8 @@
                     <div class="container-fluid heroSection">
                         <div class="container">
                             <div class="row">
-                                <div class="col-3"></div>
-                                <div class="col-9 sliderSection">
+                                <div class="col-3 d-none d-lg-block"></div>
+                                <div class="col-xl-9 col-12 sliderSection">
                                     <!-- Set up your HTML -->
                                     <div class="owl-carousel hero-carousel row mx-0">
                                         <div class="col-12 p-0">
@@ -126,7 +126,7 @@
                                                         <div class="col-12 productPrize mb-4">
                                                             <sup>$</sup>749<sup>99</sup>
                                                         </div>
-                                                        <div class="col-12">
+                                                        <div class="col-12 statBuyingSlidBtnOuter">
                                                             <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
                                                         </div>
                                                     </div>
@@ -149,7 +149,7 @@
                                                             UP TO 
                                                             <b>40% OFF</b>
                                                         </div>
-                                                        <div class="col-12">
+                                                        <div class="col-12 statBuyingSlidBtnOuter">
                                                             <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
                                                         </div>
                                                     </div>
@@ -172,13 +172,13 @@
                                                             UP TO 
                                                             <b>40% OFF</b>
                                                         </div>
-                                                        <div class="col-12">
+                                                        <div class="col-12 statBuyingSlidBtnOuter">
                                                             <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-6 rightPart">
-                                                    <div class="imgOuter">
+                                                    <div class="imgOuter imgOuter3">
                                                         <img src="assets/img/slideImg/Sounddevice.png" class="w-100 h-100" alt="">
                                                     </div>
                                                 </div>
@@ -207,13 +207,17 @@
                 center: false,
                 freeDrag: false,
                 lazyLoad: true,
-                autoplayTimeout: 3000,
+                autoplayTimeout: 5000,
                 autoplayHoverPause: true,
-                smartSpeed: 1200,
+                smartSpeed: 3800,
                 responsiveClass: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
                 responsive: {
                     0: {
                         items: 1,
+                        autoplay: true,
+                        loop: true,
                     },
                     576: {
                         items: 1,
@@ -223,10 +227,11 @@
                     },
                     992: {
                     items: 1,
+                    autoplay: false,
+                    loop: false,
                     },
                     1200: {
                     items: 1,
-                    nav: false,
                 },
                 },
                 // navText: ["", ""]
