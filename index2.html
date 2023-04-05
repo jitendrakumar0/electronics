@@ -108,9 +108,84 @@
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill" data-page-name="landing">
                     <div class="container-fluid heroSection">
-                        <div class="row">
-                            <div class="col-12 sliderSection">
-
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-9 sliderSection">
+                                    <!-- Set up your HTML -->
+                                    <div class="owl-carousel hero-carousel row mx-0">
+                                        <div class="col-12 p-0">
+                                            <div class="row align-items-center mx-0">
+                                                <div class="col-6 leftPart">
+                                                    <div class="row">
+                                                        <div class="col-12 nanoHeading">Shop to get what you love</div>
+                                                        <div class="col-12 slideHeading mb-1">
+                                                            THE NEW STATNDARD
+                                                        </div>
+                                                        <div class="col-12 subHeading mb-3">UNDER FAVORABLE SMARTWATCHES</div>
+                                                        <div class="col-12 productPrize mb-4">
+                                                            <sup>$</sup>749<sup>99</sup>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 rightPart">
+                                                    <div class="imgOuter">
+                                                        <img src="assets/img/slideImg/smartwatches-resized.png" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0">
+                                            <div class="row align-items-center mx-0">
+                                                <div class="col-6 leftPart">
+                                                    <div class="row">
+                                                        <div class="col-12 nanoHeading">Shop to get what you love</div>
+                                                        <div class="col-12 slideHeading">
+                                                            TIMEPIECES THAT 
+                                                            MAKE A STATEMENT
+                                                            UP TO 
+                                                            <b>40% OFF</b>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 rightPart">
+                                                    <div class="imgOuter">
+                                                        <img src="assets/img/slideImg/Smartphones.png" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0"> 
+                                            <div class="row align-items-center mx-0">
+                                                <div class="col-6 leftPart">
+                                                    <div class="row">
+                                                        <div class="col-12 nanoHeading">Shop to get what you love</div>
+                                                        <div class="col-12 slideHeading">
+                                                            TIMEPIECES THAT 
+                                                            MAKE A STATEMENT
+                                                            UP TO 
+                                                            <b>40% OFF</b>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 rightPart">
+                                                    <div class="imgOuter">
+                                                        <img src="assets/img/slideImg/Sounddevice.png" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,5 +195,43 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $(".hero-carousel").owlCarousel({
+                loop: false,
+                items: 7,
+                margin: 20,
+                nav: false,
+                dots: true,
+                autoplay: false,
+                center: false,
+                freeDrag: false,
+                lazyLoad: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 1200,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    576: {
+                        items: 1,
+                    },
+                    768: {
+                    items: 1,
+                    },
+                    992: {
+                    items: 1,
+                    },
+                    1200: {
+                    items: 1,
+                    nav: false,
+                },
+                },
+                // navText: ["", ""]
+            });
+            });
+        </script>
     </body>
 </html>
