@@ -8,6 +8,21 @@
                         display: none;
                     }
                     & .owl-dots {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin: 0px auto;
+                        & button {
+                            width: 70px;
+                            height: 70px;
+                            border: 1px solid $black;
+                            & span {
+                                display: flex;
+                                background: url(../img/product/headphone.png) no-repeat, center;
+                                background-size: contain;
+                                height: 100%;
+                            }
+                        }
                     }
                 }
             }
