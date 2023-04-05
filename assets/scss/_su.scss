@@ -328,19 +328,30 @@
                             & .owl-item {
                                 & .leftPart {
                                     & .nanoHeading {
+                                        line-height: 17px;
+                                        font-size: 15px;
+                                        margin-bottom: 11px;
                                     }
                                     & .slideHeading {
+                                        font-size: 20px;
+                                        line-height: 35px;
+                                        margin-bottom: 25px;
                                         & b {
                                         }
                                     }
                                     & .subHeading {
                                     }
                                     & .productPrize {
+                                        font-size: 30px;
+                                        line-height: 35px;
                                         & sup {
                                         }
                                     }
                                     & .statBuyingSlidBtnOuter {
                                         & .statBuyingSlidBtn {
+                                            padding: 10px 30px;
+                                            font-size: 14px;
+                                            line-height: 14px;                                        
                                             &:hover {
                                             }
                                         }
@@ -348,6 +359,7 @@
                                 }
                                 & .rightPart {
                                     & .imgOuter {
+                                        height: 315px;
                                         & img {
                                         }
                                     }
@@ -393,30 +405,31 @@
                             & .owl-item {
                                 & .leftPart {
                                     & .nanoHeading {
-                                        font-size: 16px;
-                                        line-height: 18px;
+                                        font-size: 12px;
+                                        line-height: 15px;
                                     }
                                     & .slideHeading {
-                                        font-size: 28px;
-                                        line-height: 30px;
+                                        font-size: 15px;
+                                        line-height: 20px;
+                                        margin-bottom: 15px;
                                         & b {
                                         }
                                     }
                                     & .subHeading {
-                                        font-size: 14px;
-                                        line-height: 18px;
+                                        font-size: 12px;
+                                        line-height: 12px;
                                     }
                                     & .productPrize {
-                                        font-size: 35px;
-                                        line-height: 38px;
+                                        font-size: 18px;
+                                        line-height: 25px;
                                         & sup {
                                         }
                                     }
                                     & .statBuyingSlidBtnOuter {
                                         & .statBuyingSlidBtn {
-                                            padding: 10px 30px;
-                                            font-size: 16px;
-                                            line-height: 16px;
+                                            padding: 6px 20px;
+                                            font-size: 11px;
+                                            line-height: 11px;
                                             &:hover {
                                             }
                                         }
@@ -424,6 +437,7 @@
                                 }
                                 & .rightPart {
                                     & .imgOuter {
+                                        height: 220px;
                                         & img {
                                         }
                                     }
