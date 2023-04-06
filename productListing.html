@@ -107,7 +107,7 @@
             <div class="row mainInner ">
                 <div class="col-12 px-0 flex-fill" data-page-name="">
                     <!-- breadcrumb -->
-                    <div class="container-fluid breadcrumbFluid">
+                    <div class="container-fluid breadcrumbFluid d-lg-block d-none">
                         <div class="container breadcrumbContainer">
                             <div class="row">
                                 <div class="col-12">
@@ -122,84 +122,1095 @@
                         </div>
                     </div>
                     <!-- filter bar -->
-                    <div class="container-fluid productListingFluid">
+                    <div class="container-fluid productListingFluid position-relative">
                         <div class="container productListingContainer">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="prodcutListingTopBox">
-                                        <div class="allCategoriesAccordion">
-                                            <div class="accordion productAccordion" id="accordionExample">
-                                                <div class="accordion-item productAccordionItem">
-                                                    <h2 class="accordion-header productAccordionHeader">
-                                                        <button class="accordion-button productAccordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Show All Categories
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" class="accordion-collapse collapse show productAccordionCollapseDiv" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body productAccordionBody">
-                                                            <ul class="list-unstyled">
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Accessories <span>(11)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Bluetooth Speakers <span>(7)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Cameras & Photography <span>(5)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Computer Componenets <span>(1)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Gadgets <span>(3)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Headphones <span>(7)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Home Entertainments <span>(1)</span></a></li>
-                                                                <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Home Theaters <span>(7)</span></a></li>
+                                <div class="col-xl-3 col-auto filterOffcanvas offcanvas-xl offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="filterbarMainContainer offcanvas-body d-block">
+                                        <div class="prodcutListingTopBox mt-3 mt-xl-0">
+                                            <div class="allCategoriesAccordion">
+                                                <div class="accordion productAccordion" id="accordionExample">
+                                                    <div class="accordion-item productAccordionItem">
+                                                        <h2 class="accordion-header productAccordionHeader">
+                                                            <button class="accordion-button productAccordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            Show All Categories
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse show productAccordionCollapseDiv" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body productAccordionBody">
+                                                                <ul class="list-unstyled">
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Accessories <span>(11)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Bluetooth Speakers <span>(7)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Cameras & Photography <span>(5)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Computer Componenets <span>(1)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Gadgets <span>(3)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Headphones <span>(7)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Home Entertainments <span>(1)</span></a></li>
+                                                                    <li class="productBodyTxtLi"><a href="javascript:;" class="productAccordionAnchor">Home Theaters <span>(7)</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="productListingBottomPart">
+                                                <a href="javascript:;" class="productListingBottomTxtOne">
+                                                    Smart Phones & Tablets <span>(26)</span>
+                                                </a>
+                                                <div class="divider"></div>
+                                                <div class="productListingBottomTxtTwoContainer">
+                                                        <a href="javascript:;" class="one">Smartphones <span>(22)</span></a>
+                                                        <a href="javascript:;" class="two">Tablets <span>(4)</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="productFilterBox">
+                                            <div class="productFilterBoxHeading">Filters</div>
+                                            <div class="productFilterBoxSubHeading">Brands</div>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault">
+                                                Apple <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault1">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault1">
+                                                Gionee <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault2">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault2">
+                                                HTC <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault3">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault3">
+                                                LG <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault4">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault4">
+                                                Microsoft <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body productListingCollapseBody">
+                                                    <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                        <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault5">
+                                                        <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault5">
+                                                        Micromax <span>(2)</span>
+                                                        </label>
+                                                    </a>
+                                                    <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                        <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault6">
+                                                        <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault6">
+                                                        Samsung <span>(2)</span>
+                                                        </label>
+                                                    </a>
+                                                    <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                        <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault7">
+                                                        <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault7">
+                                                        Xiaomi <span>(2)</span>
+                                                        </label>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a class=" productListingCollapseBtn collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                <span>+ Show more</span>  
+                                                <span>- Show less</span>  
+                                            </a>
+                                            <div class="productFilterBoxSubHeading">Color</div>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault0">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault0">
+                                                White <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault11">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault11">
+                                                    Black <span>(2)</span>
+                                                </a>
+                                                </label>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault22">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault22">
+                                                Black Leather <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault33">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault33">
+                                                Spacegray <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault44">
+                                                <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault44">
+                                                white With Gold <span>(2)</span>
+                                                </label>
+                                            </a>
+                                            <div class="collapse" id="collapseExample1">
+                                                <div class="card card-body productListingCollapseBody">
+                                                    <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                        <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault55">
+                                                        <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault55">
+                                                        Gold <span>(2)</span>
+                                                        </label>
+                                                    </a>
+                                                    <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                        <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault66">
+                                                        <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault66">
+                                                        Pink <span>(2)</span>
+                                                        </label>
+                                                    </a>
+                                                    <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
+                                                        <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault77">
+                                                        <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault77">
+                                                        Red <span>(2)</span>
+                                                        </label>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a class=" productListingCollapseBtn collapsed" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                <span>+ Show more</span>  
+                                                <span>- Show less</span>  
+                                            </a>
+                                            <div class="productFilterBoxSubHeading">Price</div>
+                                            <div class="productFilterRangeContainer">
+                                                <div class="wrapper">
+                                                    <div class="containerr">
+                                                        <div class="slider-track"></div>
+                                                        <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                                                        <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                                                    </div>
+                                                    <div class="values mt-3">
+                                                        <span>Price:</span>
+                                                        <span id="range1">
+                                                            $550
+                                                        </span>
+                                                        <span> &dash; </span>
+                                                        <span id="range2">
+                                                            $600
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="filterBtn">Filter</button>
+                                            <div class="productListingFilterBarImg">
+                                                <img src="assets/img/product/filterbarimg.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="productFilterBoxHeadinggParent position-relative">
+                                                <div class="productFilterBoxHeadingg activeLine">Latest Product</div>
+                                            </div>
+                                            <div class="filterBarProductListContainer">
+                                                <div class="row align-items-center filterBarProductListContainerMargin">
+                                                    <div class="col-auto pe-0">
+                                                        <a href="javascript:;" class="productImgContainer">
+                                                            <img src="assets/img/product/filterimg1.png" alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col ps-0">
+                                                        <div class="filterBarProductListTxtBox">
+                                                            <span>Tablet Thin EliteBook Revolve 810 G2</span>
+                                                            <ul class="list-unstyled d-flex mb-2">
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
                                                             </ul>
+                                                            <span>₹1356,025</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center filterBarProductListContainerMargin">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="productImgContainer">
+                                                            <img src="assets/img/product/filterimg2.png" alt="" srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-0">
+                                                        <div class="filterBarProductListTxtBox">
+                                                            <span>Tablet Thin EliteBook Revolve 810 G2</span>
+                                                            <ul class="list-unstyled d-flex mb-2">
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                            </ul>
+                                                            <span>₹1356,025</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center filterBarProductListContainerMargin">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="productImgContainer">
+                                                            <img src="assets/img/product/filterimg3.png" alt="" srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-0">
+                                                        <div class="filterBarProductListTxtBox">
+                                                            <span>Tablet Thin EliteBook Revolve 810 G2</span>
+                                                            <ul class="list-unstyled d-flex mb-2">
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                            </ul>
+                                                            <span>₹1356,025</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center filterBarProductListContainerMargin">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="productImgContainer">
+                                                            <img src="assets/img/product/filterimg4.png" alt="" srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-0">
+                                                        <div class="filterBarProductListTxtBox">
+                                                            <span>Tablet Thin EliteBook Revolve 810 G2</span>
+                                                            <ul class="list-unstyled d-flex mb-2">
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                            </ul>
+                                                            <span>₹1356,025</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center filterBarProductListContainerMargin">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="productImgContainer">
+                                                            <img src="assets/img/product/filterimg5.png" alt="" srcset="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-0">
+                                                        <div class="filterBarProductListTxtBox">
+                                                            <span>Tablet Thin EliteBook Revolve 810 G2</span>
+                                                            <ul class="list-unstyled d-flex mb-2">
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                                <li><img src="assets/img/svg/yellowstar.svg" alt="" srcset=""></li>
+                                                            </ul>
+                                                            <span>₹1356,025</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="productListingBottomPart">
-                                            <a href="javascript:;" class="productListingBottomTxtOne">
-                                                Smart Phones & Tablets <span>(26)</span>
-                                            </a>
-                                            <div class="divider"></div>
-                                            <div class="productListingBottomTxtTwoContainer">
-                                                    <a href="javascript:;" class="one">Smartphones <span>(22)</span></a>
-                                                    <a href="javascript:;" class="two">Tablets <span>(4)</span></a>
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-12 py-5 py-xl-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="productListingRytPartTopBar">
+                                                <div class="row ">
+                                                    <div class="col-12 d-flex justify-content-between align-items-center">
+                                                        <div class="productListingRytPartTopBarMainHeading">Smart Phones & Tablets</div>
+                                                        <div class="productListingRytPartTopBarMainSubHeading">Showing 1-25 of 26 results</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="bar d-xl-block d-none">
+                                                <div class="productListingRytPartTopBarFilter">
+                                                    <div class="row align-items-center w-100 mx-0 justify-content-center">
+                                                        <div class="col-auto">
+                                                            <div class="productListingRytPartTopBarFiltersContainer">
+                                                                <a href="javascript:;"><img class="me-2 filtericcon1 active" src="assets/img/svg/producttopicon1.svg" alt="" srcset=""></a>
+                                                                <a href="javascript:;"><img class="me-2 filtericcon2" src="assets/img/svg/producttopicon2.svg" alt="" srcset=""></a>
+                                                                <a href="javascript:;"><img class="me-2 filtericcon3" src="assets/img/svg/producttopicon4.svg" alt="" srcset=""></a>
+                                                                <a href="javascript:;"><img class="me-2 filtericcon4" src="assets/img/svg/producttopicon3.svg" alt="" srcset=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="row">
+                                                                <div class="col-6 d-flex justify-content-end">
+                                                                    <select class="form-select productLiistingTopBarSelectForm1" aria-label="Default select example">
+                                                                        <option selected>Default sorting</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-6 ">
+                                                                    <select class="form-select productLiistingTopBarSelectForm2" aria-label="Default select example">
+                                                                        <option selected>Show 20</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto pe-0 d-xl-block d-none">
+                                                            <div class="productListingRytPartEndTxtContainer d-flex align-items-center justify-content-end">
+                                                                <input type="text" class="d-none" name="" id="aa">
+                                                                <label for="aa" class="productListingRytPartEndTxt">1</label>
+                                                                <span class="productListingRytPartEndTxt1">of 2</span>
+                                                                <a href="javascript:;"><img src="assets/img/svg/rytarrowblack.svg" alt="" srcset=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="bar2 d-xl-none d-block">
+                                                <div class="productListingRytPartTopBarFilter borderr" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                                    <div class="row mx-0 w-100">
+                                                        <div class="col-12 px-0 d-flex justify-content-between align-items-center w-100">
+                                                            <div class="filtersContainer" id="mobFilterBtn">
+                                                                <img src="assets/img/svg/filtericonblack.svg" alt="" srcset="">
+                                                                <span class="ms-1">Filters</span>
+                                                            </div>
+                                                            <select class="form-select productLiistingTopBarSelectForm3" aria-label="Default select example">
+                                                                <option selected>Default sorting</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5">
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product1.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product2.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product3.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product4.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product5.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product5.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product4.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product3.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product2.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product1.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product1.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product2.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product2.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product3.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row productCard productRightBorderCard flex-column">
+                                                        <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                        <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                        <div class="col-12 productImage px-0">
+                                                            <img src="./assets/img/product/product4.png" alt="product image">
+                                                        </div>
+                                                        <div class="col-12 px-0 priceHover">
+                                                            <div class="row mx-0 align-items-end">
+                                                                <div class="col px-0">
+                                                                    <span class="productOldPrice d-block">₹210.00</span>
+                                                                    <span class="productPrice d-block">₹200.00</span>
+                                                                </div>
+                                                                <div class="col-auto pe-0">
+                                                                    <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                        <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 hoverBtns">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="productFilterBox">
-                                        <div class="productFilterBoxHeading">Filters</div>
-                                        <div class="productFilterBoxSubHeading">Brands</div>
-                                        <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
-                                            <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault">
-                                            Apple <span>(2)</span>
-                                            </label>
+                                </div>
+                            </div>
+                            <!-- footer product section -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="featuredSectionBox position-relative">
+                                        <div class="featuredSectionBoxMainHeading">Featured Product</div>
+                                        <a href="javascript:;" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg1.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul>
+                                                        <span>₹1356,00</span>
+                                                    </div>
+                                                </div>
+                                        </div>
                                         </a>
-                                        <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
-                                            <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault1">
-                                            <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault1">
-                                            Gionee <span>(2)</span>
-                                            </label>
+                                        <a href="javascript:;" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg2.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul>
+                                                        <span>₹1356,00</span>
+                                                    </div>
+                                                </div>
+                                        </div>
                                         </a>
-                                        <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
-                                            <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault1">
-                                            <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault1">
-                                            HTC <span>(2)</span>
-                                            </label>
+                                        <a href="javascript:;" class="anchor">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg3.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <!-- <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul> -->
+                                                        <div class="spanMargin">
+                                                            <span class="spanRed me-1">₹475,0</span><span class="delete"><del>₹250,00</del></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </a>
-                                        <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
-                                            <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault1">
-                                            <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault1">
-                                            LG <span>(2)</span>
-                                            </label>
-                                        </a>
-                                        <a href="javascript:;" class="form-check productFilterBoxAnchor mb-2">
-                                            <input class="form-check-input productFilterBoxInp" type="checkbox" value="" id="flexCheckDefault1">
-                                            <label class="form-check-label productFilterBoxLbl" for="flexCheckDefault1">
-                                            Microsoft <span>(2)</span>
-                                            </label>
-                                        </a>
-                                        <a href="javascript:;" class="more ">+ Show more</a>
                                     </div>
                                 </div>
-                                <div class="col-9"></div>
+                                <div class="col-3">
+                                    <div class="featuredSectionBox position-relative">
+                                        <div class="featuredSectionBoxMainHeading">Top Selling Product</div>
+                                        <a href="javascript" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg4.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <!-- <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul> -->
+                                                        <div class="spanmarginn">
+                                                            <span>₹1356,00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="javascript" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg5.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <!-- <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul> -->
+                                                        <div class="spanmarginn">
+                                                            <span>₹1356,00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="javascript:;" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg6.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstaroutline1.svg" alt=""></li>
+                                                        </ul>
+                                                        <span>₹1356,00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="featuredSectionBox position-relative">
+                                        <div class="featuredSectionBoxMainHeading">On-sale Product</div>
+                                        <a href="javascript:;" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg7.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <!-- <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul> -->
+                                                        <div class="spanMargin">
+                                                            <span class="spanRed me-1">₹475,0</span><span class="delete"><del>₹250,00</del></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="javascript:;" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg8.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <!-- <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                        </ul> -->
+                                                        <div class="spanMargin">
+                                                            <span class="spanRed me-1">₹475,0</span><span class="delete"><del>₹250,00</del></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="javascript" class="anchor position-relative">
+                                            <div class="row">
+                                                <div class="col-auto pe-0">
+                                                    <div class="productImgParent stretched-link">
+                                                        <img src="assets/img/product/productimg9.png" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <div class="productDetailBox">
+                                                        <div class="productNameAnchor"><div class="productName">Tablet Thin EliteBook Revolve 810 G6</div></div>
+                                                        <ul class="list-unstyled d-flex starUl">
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstar.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowhalfstar1.svg" alt=""></li>
+                                                            <li class="starli"><img src="assets/img/svg/yellowstaroutline1.svg" alt=""></li>
+                                                        </ul>
+                                                        <span>₹1356,00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-4">
+                                    <a href="javascript:;" class="last">
+                                        <img src="assets/img/product/productimg10.jpg" alt="" srcset="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -207,6 +1218,42 @@
             </div>
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="module" src="assets/js/main.min.js"></script>
+        <!-- <script type="module" src="assets/js/main.min.js"></script> -->
+        <!-- range js -->
+        <script>
+            window.onload = function () {
+            slideOne();
+            slideTwo();
+            };
+
+            let sliderOne = document.getElementById("slider-1");
+            let sliderTwo = document.getElementById("slider-2");
+            let displayValOne = document.getElementById("range1");
+            let displayValTwo = document.getElementById("range2");
+            let minGap = 0;
+            let sliderTrack = document.querySelector(".slider-track");
+            let sliderMaxValue = document.getElementById("slider-1").max;
+
+            function slideOne() {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderOne.value = parseInt(sliderTwo.value) - minGap;
+            }
+            displayValOne.textContent = sliderOne.value;
+            fillColor();
+            }
+            function slideTwo() {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderTwo.value = parseInt(sliderOne.value) + minGap;
+            }
+            displayValTwo.textContent = sliderTwo.value;
+            fillColor();
+            }
+            function fillColor() {
+            percent1 = (sliderOne.value / sliderMaxValue) * 100;
+            percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+            sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #fed700 ${percent1}% , #fed700 ${percent2}%, #dadae5 ${percent2}%)`;
+            }
+        </script>
+
     </body>
 </html>
