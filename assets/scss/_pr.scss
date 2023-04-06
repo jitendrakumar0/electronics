@@ -244,6 +244,7 @@
                         width: 100%;
                         z-index: -10;
                         left: 0;
+                        display: none;
                         // opacity: 0;
                         transition: 0.3s ease-in-out;
                         transform: translateY(-10px);
@@ -274,6 +275,7 @@
                         & .hoverLinkBox {
                             opacity: 1;
                             z-index: 10;
+                            display: block;
                             transform: translateY(0);
                         }
                     }
