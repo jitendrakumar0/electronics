@@ -120,7 +120,277 @@
             }
         }
         .productDecription {
-
+            & .tabsOuter {
+                & .nav {
+                    &.nav-tabs {
+                        & .nav-item {
+                            & .nav-link{
+                                border-bottom:2px solid transparent !important;
+                                transition: ease-in-out .3s;
+                                margin-bottom: -1px !important;
+                                &::before {
+                                    content: ' ';
+                                    height: 4px;
+                                    width: 10px;
+                                    display: block;
+                                    position: absolute;
+                                    bottom: -5px;
+                                    left: 50%;
+                                    border-radius: 0 0 10px 10px;
+                                    transform: translateX(-50%);
+                                }
+                                &.active {
+                                    border-color: $theme1 !important;
+                                    color: $theme1 !important;
+                                    &::before {
+                                        background-color: $theme1 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .tab-content {
+                    & .tab-pane {
+                        & .productAccessories{
+                            & .productCards {
+                                &:nth-child(1) {
+                                    & .card {
+                                        &::after, &::before {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                & .card {
+                                    &:after {
+                                        content: '+';
+                                        width: 30px;
+                                        height: 30px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50px;
+                                        font-size: 16px;
+                                        border: 1px solid $gray-400;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: -27px;
+                                        margin: auto;
+                                        background-color: $white;
+                                    }
+                                    &:before {
+                                        content: '';
+                                        border-left: 1px solid $gray-400;
+                                        height: 80%;
+                                        align-items: center;
+                                        display: flex;
+                                        margin: auto;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: -12px;
+                                    }
+                                    & .productType {
+                                        font-size: 13px;
+                                    }
+                                    & .productName {
+                                        font-size: 14px;
+                                    }
+                                    & .imgOuter {
+                                    }
+                                    & .productPrice {
+                                    }
+                                }
+                            }
+                            & .totalPrice {
+                                & .totalValue{
+                                    font-size: 20px;
+                                    color: lighten($danger, 20);
+                                }
+                                & .totalItem {
+                                    font-size: 14px;
+                                }
+                                & .addAll {
+                                    font-size: 14px;
+                                    &:hover {
+                                        background-color: $black;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            & .selectAccessories {
+                                .form-check {
+                                    & .form-check-input{
+                                        &:checked {
+                                            &:disabled {
+                                                background-color: $gray-500;
+                                                border-color: $gray-500;
+                                            }
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        & .decriptionOuter {
+                            & .heading {
+                                font-size: 22px;
+                            }
+                            & .txt {
+                                font-size: 14px;
+                                color: $gray-500;
+                            }
+                            & .imgOuter {
+                                &.imgOuterLeft{
+                                    & img {
+                                        left: auto;
+                                        right: 60px;
+                                    }
+                                }
+                                & img {
+                                    left: 60px;
+                                }
+                            }
+                            & .bottomMenu {
+                                font-size: 14px;
+                            }
+                        }
+                        & .specificationMain {
+                            & .detail {
+                                & .heading {
+                                    font-size: 18px;
+                                }
+                                & .title, & .dec {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        & .reviewMain {
+                            & .title {
+                                font-size: 16px;
+                            }
+                            & .totalReview {
+                                & .overAllRating{
+                                    font-size: 28px;
+                                    line-height: 20px;
+                                    & .txt {
+                                        font-size: 14px;
+                                    }
+                                }
+                                & .viewReview{
+                                    & .ratingStar {
+                                    }
+                                    & .ratingBar {
+                                        & .progress {
+                                            height: 10px;
+                                            background-color: $gray-200;
+                                            & .progress-bar{
+                                                background-color: $gray-400;
+                                            }
+                                            & .value {
+                                                margin-right: -16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .writeReview{
+                                & .ratingTitle{
+                                    font-size: 14px;
+                                }
+                                & .ratingStar {
+                                    & .rating-box {
+                                        display: inline-block;
+                                        & .rating-container {
+                                          direction: rtl !important;
+                                          & label {
+                                            display: inline-block;
+                                            margin: 15px 0;
+                                            color: $gray-200;
+                                            cursor: pointer;
+                                            font-size: 18px;
+                                            transition: color 0.2s;
+                                          }
+                                          & input {
+                                            display: none;
+                                          }
+                                          & label:hover, & label:hover ~ label, & input:checked ~ label  {
+                                            color: $theme1;
+                                          }
+                                        }
+                                      }
+                                }
+                                & .contentSide {
+                                    & .form-control {
+                                        font-size: 14px;
+                                    }
+                                    & .form-check {
+                                        & .form-check-label {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    & .addReviewBtn {
+                                        font-size: 14px;
+                                        &:hover {
+                                            background-color: $black !important;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                            & .allReview {
+                                & .reviewOuter {
+                                    padding: 20px 0;
+                                    &:first-child{
+                                        border: none;
+                                    }
+                                    border-top: 1px solid $gray-400;
+                                }
+                                & .reviewStars {
+                                }
+                                & .comment {
+                                    font-size: 14px;
+                                }
+                                & .reviewBy {
+                                    font-size: 14px;
+                                    & .reviewDate {
+                                        color: $gray-400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brandsSlider{
+            & .brandouter {
+                width: 180px;
+                & img {
+                }
+            }
+            & .allBrandsSlider  {
+                & .owl-nav{
+                    & .owl-prev, & .owl-next {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        font-size: 32px;
+                        &.disabled {
+                            color: $gray-500;
+                        }
+                    }
+                    & .owl-prev {
+                        left: 0;
+                    }
+                    & .owl-next {
+                        right: 0;
+                    }
+                }
+            }
         }
     }
 
@@ -215,11 +485,392 @@
                 }
             }
         }
+        .brandsSlider{
+            & .brandouter {
+                width: 150px;
+                & img {
+                }
+            }
+            & .allBrandsSlider  {
+                & .owl-nav{
+                    & .owl-prev, & .owl-next {
+                        &.disabled {
+                        }
+                    }
+                    & .owl-prev {
+                    }
+                    & .owl-next {
+                    }
+                }
+            }
+        }
     }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        
+        .productDecription {
+            & .tabsOuter {
+                & .nav {
+                    &.nav-tabs {
+                        &::-webkit-scrollbar {
+                        }
+                        & .nav-item {
+                            & .nav-link{
+                                &::before {
+                                }
+                                &.active {
+                                    &::before {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .tab-content {
+                    & .tab-pane {
+                        & .productAccessories{
+                            & .productCards {
+                                &:nth-child(1) {
+                                    & .card {
+                                        &::after, &::before {
+                                        }
+                                    }
+                                }
+                                & .card {
+                                    &:after {
+                                    }
+                                    &:before {
+                                    }
+                                    & .productType {
+                                    }
+                                    & .productName {
+                                    }
+                                    & .imgOuter {
+                                    }
+                                    & .productPrice {
+                                    }
+                                }
+                            }
+                            & .totalPrice {
+                                & .totalValue{
+                                }
+                                & .totalItem {
+                                }
+                                & .addAll {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                            & .selectAccessories {
+                                .form-check {
+                                    & .form-check-input{
+                                        &:checked {
+                                            &:disabled {
+                                            }
+                                        }
+                                    }
+                                    & .form-check-label {
+                                    }
+                                }
+                            }
+                        }
+                        & .decriptionOuter {
+                            & .heading {
+                                font-size: 18px;
+                            }
+                            & .txt {
+                                font-size: 13px;
+                            }
+                            & .imgOuter {
+                                width: 286px;
+                                margin-left: auto;
+                                &.imgOuterLeft{
+                                    margin-right: auto;
+                                    margin-left: 0;
+                                    & img {
+                                    }
+                                }
+                                & img {
+                                }
+                            }
+                            & .bottomMenu {
+                                font-size: 13px;
+                            }
+                        }
+                        & .specificationMain {
+                            & .detail {
+                                & .heading {
+                                    font-size: 16px;
+                                }
+                                & .title, & .dec {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        & .reviewMain {
+                            & .title {
+                            }
+                            & .totalReview {
+                                & .overAllRating{
+                                    font-size: 24px;
+                                    & .txt {
+                                        font-size: 13px;
+                                    }
+                                }
+                                & .viewReview{
+                                    & .ratingStar {
+                                    }
+                                    & .ratingBar {
+                                        & .progress {
+                                            & .progress-bar{
+                                            }
+                                            & .value {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .writeReview{
+                                & .ratingTitle{
+                                    font-size: 13px;
+                                }
+                                & .ratingStar {
+                                    & .rating-box {
+                                        & .rating-container {
+                                          & label {
+                                            font-size: 16px;
+                                          }
+                                          & input {
+                                          }
+                                          & label:hover, & label:hover ~ label, & input:checked ~ label  {
+                                          }
+                                        }
+                                      }
+                                }
+                                & .contentSide {
+                                    & .form-control {
+                                        font-size: 13px;
+                                    }
+                                    & .form-check {
+                                        & .form-check-label {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    & .addReviewBtn {
+                                        font-size: 13px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                            & .allReview {
+                                & .reviewOuter {
+                                    &:first-child{
+                                    }
+                                }
+                                & .reviewStars {
+                                }
+                                & .comment {
+                                    font-size: 13px;
+                                }
+                                & .reviewBy {
+                                    font-size: 13px;
+                                    & .reviewDate {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brandsSlider{
+            & .brandouter {
+                width: 120px;
+                & img {
+                }
+            }
+            & .allBrandsSlider  {
+                & .owl-nav{
+                    & .owl-prev, & .owl-next {
+                        font-size: 24px;
+                        &.disabled {
+                        }
+                    }
+                    & .owl-prev {
+                    }
+                    & .owl-next {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .productDecription {
+            & .tabsOuter {
+                & .nav {
+                    &.nav-tabs {
+                        &::-webkit-scrollbar {
+                        }
+                        & .nav-item {
+                            & .nav-link{
+                                &::before {
+                                }
+                                &.active {
+                                    &::before {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .tab-content {
+                    & .tab-pane {
+                        & .productAccessories{
+                            & .productCards {
+                                &:nth-child(1) {
+                                    & .card {
+                                        &::after, &::before {
+                                        }
+                                    }
+                                }
+                                & .card {
+                                    &:after {
+                                    }
+                                    &:before {
+                                    }
+                                    & .productType {
+                                    }
+                                    & .productName {
+                                    }
+                                    & .imgOuter {
+                                    }
+                                    & .productPrice {
+                                    }
+                                }
+                            }
+                            & .totalPrice {
+                                & .totalValue{
+                                }
+                                & .totalItem {
+                                }
+                                & .addAll {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                            & .selectAccessories {
+                                .form-check {
+                                    & .form-check-input{
+                                        &:checked {
+                                            &:disabled {
+                                            }
+                                        }
+                                    }
+                                    & .form-check-label {
+                                    }
+                                }
+                            }
+                        }
+                        & .decriptionOuter {
+                            & .heading {
+                            }
+                            & .txt {
+                            }
+                            & .imgOuter {
+                                &.imgOuterLeft{
+                                    margin-right: auto;
+                                    margin-left: 0;
+                                    & img {
+                                        left: auto;
+                                        right: 27px;
+                                    }
+                                }
+                                & img {
+                                    left: 27px;
+                                }
+                            }
+                            & .bottomMenu {
+                            }
+                        }
+                        & .specificationMain {
+                            & .detail {
+                                & .heading {
+                                }
+                                & .title, & .dec {
+                                }
+                            }
+                        }
+                        & .reviewMain {
+                            & .title {
+                            }
+                            & .totalReview {
+                                & .overAllRating{
+                                    & .txt {
+                                    }
+                                }
+                                & .viewReview{
+                                    & .ratingStar {
+                                    }
+                                    & .ratingBar {
+                                        & .progress {
+                                            & .progress-bar{
+                                            }
+                                            & .value {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .writeReview{
+                                & .ratingTitle{
+                                }
+                                & .ratingStar {
+                                    & .rating-box {
+                                        & .rating-container {
+                                          & label {
+                                          }
+                                          & input {
+                                          }
+                                          & label:hover, & label:hover ~ label, & input:checked ~ label  {
+                                          }
+                                        }
+                                      }
+                                }
+                                & .contentSide {
+                                    & .form-control {
+                                    }
+                                    & .form-check {
+                                        & .form-check-label {
+                                        }
+                                    }
+                                    & .addReviewBtn {
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                            & .allReview {
+                                & .reviewOuter {
+                                    &:first-child{
+                                    }
+                                }
+                                & .reviewStars {
+                                }
+                                & .comment {
+                                }
+                                & .reviewBy {
+                                    & .reviewDate {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @include media-breakpoint-down(sm) {
         .productDetails {
@@ -309,6 +960,210 @@
                             font-size: 10px;
                             & img {
                                 width: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .productDecription {
+            & .tabsOuter {
+                & .nav {
+                    &.nav-tabs {
+                        overflow: auto hidden;
+                        flex-wrap: nowrap;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                        & .nav-item {
+                            & .nav-link{
+                                font-size: 12px;
+                                &::before {
+                                }
+                                &.active {
+                                    &::before {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .tab-content {
+                    & .tab-pane {
+                        & .productAccessories{
+                            & .productCards {
+                                &:nth-child(1) {
+                                    & .card {
+                                        &::after, &::before {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                & .card {
+                                    max-width: 320px;
+                                    margin: 0 auto;
+                                    &:after {
+                                        top: -20px;
+                                        bottom: unset;
+                                        right: 0;
+                                        left: 0;
+                                    }
+                                    &:before {
+                                        border-top: 1px solid $gray-400;
+                                        border-left: none;
+                                        width: 80%;
+                                        top: -5px;
+                                        bottom: unset;
+                                        left: 0;
+                                        right: 0;
+                                    }
+                                    & .productType {
+                                        font-size: 12px;
+                                    }
+                                    & .productName {
+                                        font-size: 12px;
+                                    }
+                                    & .imgOuter {
+                                    }
+                                    & .productPrice {
+                                    }
+                                }
+                            }
+                            & .totalPrice {
+                                & .card {
+                                    max-width: 320px;
+                                    margin: 0 auto;
+                                    & .totalValue{
+                                        font-size: 16px;
+                                    }
+                                    & .totalItem {
+                                        font-size: 12px;
+                                    }
+                                    & .addAll {
+                                        font-size: 12px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                            & .selectAccessories {
+                                .form-check {
+                                    & .form-check-input{
+                                        &:checked {
+                                            &:disabled {
+                                            }
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-size: 12px;
+                                        font-weight: 400 !important;
+                                    }
+                                }
+                            }
+                        }
+                        & .decriptionOuter {
+                            & .heading {
+                                font-size: 16px;
+                            }
+                            & .txt {
+                                font-size: 12px;
+                            }
+                            & .imgOuter {
+                                width: 240px;
+                                &.imgOuterLeft{
+                                    & img {
+                                    }
+                                }
+                                & img {
+                                }
+                            }
+                            & .bottomMenu {
+                                font-size: 12px;
+                            }
+                        }
+                        & .specificationMain {
+                            & .detail {
+                                & .heading {
+                                    font-size: 16px;
+                                }
+                                & .title, & .dec {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        & .reviewMain {
+                            & .title {
+                                font-size: 14px;
+                            }
+                            & .totalReview {
+                                & .overAllRating{
+                                    font-size: 20px;
+                                    & .txt {
+                                        font-size: 12px;
+                                    }
+                                }
+                                & .viewReview{
+                                    & .ratingStar {
+                                    }
+                                    & .ratingBar {
+                                        & .progress {
+                                            & .progress-bar{
+                                            }
+                                            & .value {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            & .writeReview{
+                                & .ratingTitle{
+                                    font-size: 12px;
+                                }
+                                & .ratingStar {
+                                    & .rating-box {
+                                        & .rating-container {
+                                          & label {
+                                            font-size: 14px;
+                                          }
+                                          & input {
+                                          }
+                                          & label:hover, & label:hover ~ label, & input:checked ~ label  {
+                                          }
+                                        }
+                                      }
+                                }
+                                & .contentSide {
+                                    & .form-control {
+                                        font-size: 12px;
+                                    }
+                                    & .form-check {
+                                        & .form-check-label {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    & .addReviewBtn {
+                                        font-size: 12px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                            & .allReview {
+                                & .reviewOuter {
+                                    &:first-child{
+                                    }
+                                }
+                                & .reviewStars {
+                                }
+                                & .comment {
+                                    font-size: 12px;
+                                }
+                                & .reviewBy {
+                                    font-size: 12px;
+                                    & .reviewDate {
+                                    }
+                                }
                             }
                         }
                     }
