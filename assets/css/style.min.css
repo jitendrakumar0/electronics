@@ -291,7 +291,7 @@ body .overflow-auto-hidden {
   transform: translateX(0);
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .prodcutListingTopBox {
-  border: 1px solid #e9ecef;
+  border: 1px solid #ced4da;
   border-radius: 6px;
   margin-bottom: 2.3em;
 }
@@ -462,16 +462,58 @@ body .overflow-auto-hidden {
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper {
   position: relative;
-  width: 80%;
-  background-color: #ffffff;
-  padding: 50px 40px 20px 40px;
+  width: 100%;
+  background-color: #fff;
   border-radius: 10px;
 }
-.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper .container {
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper .containerr {
   position: relative;
   width: 100%;
-  height: 100px;
-  margin-top: 30px;
+  height: 50px;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper .slider-track {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range]::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: #fed700;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
@@ -479,7 +521,7 @@ body .overflow-auto-hidden {
   width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #3264fe;
+  background-color: #fed700;
   pointer-events: auto;
   border: none;
 }
@@ -489,12 +531,30 @@ body .overflow-auto-hidden {
   width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #3264fe;
+  background-color: #fed700;
   pointer-events: auto;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper input[type=range]:active::-webkit-slider-thumb {
-  background-color: #ffffff;
-  border: 1px solid #3264fe;
+  background-color: #fff !important;
+  border: 1px solid #fed700 !important;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterRangeContainer .wrapper .values {
+  font-size: 1em;
+  color: #adb5bd;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterBoxHeadingg {
+  font-size: 1.286em;
+  padding-bottom: 1.053em;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 1.95em;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productFilterBoxHeadingg::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #fed700;
+  position: absolute;
+  top: 52px;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .filterBtn {
   font-size: 16px;
@@ -511,7 +571,7 @@ body .overflow-auto-hidden {
   color: #fff;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productListingFilterBarImg {
-  margin-bottom: 3.3em;
+  margin-bottom: 2.3em;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .productListingFilterBarImg img {
   height: auto;
@@ -538,6 +598,9 @@ body .overflow-auto-hidden {
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .filterBarProductListContainer .filterBarProductListContainerMargin .productImgContainer img {
   width: 100%;
   height: 100%;
+}
+.productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .filterBarProductListContainer .filterBarProductListContainerMargin .productImgContainer img:hover {
+  cursor: pointer;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .filterBarProductListContainer .filterBarProductListContainerMargin .filterBarProductListTxtBox span:first-child {
   display: block;

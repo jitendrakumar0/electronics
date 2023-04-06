@@ -31,7 +31,7 @@
                     &.add{
                     }
                     & .prodcutListingTopBox{
-                        border: 1px solid $gray-200;
+                        border: 1px solid $gray-400;
                         border-radius: 6px;
                         margin-bottom:2.3em;
                         & .allCategoriesAccordion{
@@ -214,65 +214,100 @@
                         & .productFilterRangeContainer{
                             & .wrapper {
                                 position: relative;
-                                width: 80%;
-                                background-color: #ffffff;
-                                padding: 50px 40px 20px 40px;
+                                width: 100%;
+                                background-color: $white;
                                 border-radius: 10px;
-                                & .container {
+                                & .containerr {
                                     position: relative;
                                     width: 100%;
-                                    height: 100px;
-                                    margin-top: 30px;
+                                    height: 50px;
                                 }
-                                & input[type="range"]::-moz-range-thumb {
+                                input[type="range"] {
                                     -webkit-appearance: none;
-                                    height: 1.7em;
-                                    width: 1.7em;
-                                    cursor: pointer;
-                                    border-radius: 50%;
-                                    background-color: #3264fe;
-                                    pointer-events: auto;
-                                    border: none;
-                                }
-                                & input[type="range"]::-ms-thumb {
+                                    -moz-appearance: none;
                                     appearance: none;
-                                    height: 1.7em;
-                                    width: 1.7em;
-                                    cursor: pointer;
-                                    border-radius: 50%;
-                                    background-color: #3264fe;
-                                    pointer-events: auto;
+                                    width: 100%;
+                                    outline: none;
+                                    position: absolute;
+                                    margin: auto;
+                                    top: 0;
+                                    bottom: 0;
+                                    background-color: transparent;
+                                    pointer-events: none;
                                 }
-                                & input[type="range"]:active::-webkit-slider-thumb {
-                                    background-color: #ffffff;
-                                    border: 1px solid #3264fe;
+                                .slider-track {
+                                width: 100%;
+                                height: 5px;
+                                position: absolute;
+                                margin: auto;
+                                top: 0;
+                                bottom: 0;
+                                border-radius: 5px;
+                                }
+                                input[type="range"]::-webkit-slider-runnable-track {
+                                -webkit-appearance: none;
+                                height: 5px;
+                                }
+                                input[type="range"]::-moz-range-track {
+                                -moz-appearance: none;
+                                height: 5px;
+                                }
+                                input[type="range"]::-ms-track {
+                                appearance: none;
+                                height: 5px;
+                                }
+                                input[type="range"]::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                height: 1.7em;
+                                width: 1.7em;
+                                background-color: $theme1;
+                                cursor: pointer;
+                                margin-top: -9px;
+                                pointer-events: auto;
+                                border-radius: 50%;
+                                }
+                                input[type="range"]::-moz-range-thumb {
+                                -webkit-appearance: none;
+                                height: 1.7em;
+                                width: 1.7em;
+                                cursor: pointer;
+                                border-radius: 50%;
+                                background-color: $theme1;
+                                pointer-events: auto;
+                                border: none;
+                                }
+                                input[type="range"]::-ms-thumb {
+                                appearance: none;
+                                height: 1.7em;
+                                width: 1.7em;
+                                cursor: pointer;
+                                border-radius: 50%;
+                                background-color:$theme1;
+                                pointer-events: auto;
+                                }
+                                input[type="range"]:active::-webkit-slider-thumb {
+                                background-color: $white !important;
+                                border: 1px solid $theme1 !important;
+                                }
+                                & .values{
+                                    font-size: 1em;
+                                    color: $gray-500;
                                 }
                             }
-                            // & .values {
-                            //     background-color: #3264fe;
-                            //     width: 32%;
-                            //     position: relative;
-                            //     margin: auto;
-                            //     padding: 10px 0;
-                            //     border-radius: 5px;
-                            //     text-align: center;
-                            //     font-weight: 500;
-                            //     font-size: 25px;
-                            //     color: #ffffff;
-                            // }
-                            // & .values:before {
-                            //     content: "";
-                            //     position: absolute;
-                            //     height: 0;
-                            //     width: 0;
-                            //     border-top: 15px solid #3264fe;
-                            //     border-left: 15px solid transparent;
-                            //     border-right: 15px solid transparent;
-                            //     margin: auto;
-                            //     bottom: -14px;
-                            //     left: 0;
-                            //     right: 0;
-                            // }
+                        }
+                        & .productFilterBoxHeadingg{
+                            font-size: 1.286em;
+                            padding-bottom: 1.053em;
+                            border-bottom: 1px solid $gray-200;
+                            margin-bottom: 1.95em;
+                            &::before{
+                                content: "";
+                                width: 70px;
+                                height: 2px;
+                                background-color: #fed700;
+                                position: absolute;
+                                top: 52px;
+                            }
                         }
                         & .filterBtn{
                             font-size: 16px;
@@ -289,7 +324,7 @@
                             }
                         }
                         & .productListingFilterBarImg{
-                            margin-bottom: 3.3em;
+                            margin-bottom: 2.3em;
                             & img{
                                 height: auto;
                                 max-width: 100%;
@@ -300,7 +335,7 @@
                                 content: "";
                                 width: 70px;
                                 height: 2px;
-                                background-color: #fed700;
+                                background-color: $theme1;
                                 position: absolute;
                                 top: 52px;
                             }
@@ -317,6 +352,9 @@
                                     & img{
                                     width: 100%;
                                     height: 100%;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
                                     }
                                 }
                                 & .filterBarProductListTxtBox{
@@ -428,7 +466,6 @@
                     }
                     & .filtersContainer{
                         & img{
-
                         }
                         & span{
                             font-size: .875rem;

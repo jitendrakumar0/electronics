@@ -107,7 +107,7 @@
             <div class="row mainInner ">
                 <div class="col-12 px-0 flex-fill" data-page-name="">
                     <!-- breadcrumb -->
-                    <div class="container-fluid breadcrumbFluid">
+                    <div class="container-fluid breadcrumbFluid d-lg-block d-none">
                         <div class="container breadcrumbContainer">
                             <div class="row">
                                 <div class="col-12">
@@ -122,12 +122,12 @@
                         </div>
                     </div>
                     <!-- filter bar -->
-                    <div class="container-fluid productListingFluid">
+                    <div class="container-fluid productListingFluid position-relative">
                         <div class="container productListingContainer">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="filterbarMainContainer d-none d-xl-block">
-                                        <div class="prodcutListingTopBox">
+                                <div class="col-xl-3 col-auto filterOffcanvas offcanvas-xl offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="filterbarMainContainer offcanvas-body d-block">
+                                        <div class="prodcutListingTopBox mt-3 mt-xl-0">
                                             <div class="allCategoriesAccordion">
                                                 <div class="accordion productAccordion" id="accordionExample">
                                                     <div class="accordion-item productAccordionItem">
@@ -281,33 +281,38 @@
                                                 <span>- Show less</span>  
                                             </a>
                                             <div class="productFilterBoxSubHeading">Price</div>
-                                            <!-- <div class="productFilterRangeContainer">
+                                            <div class="productFilterRangeContainer">
                                                 <div class="wrapper">
-                                                    <div class="values">
-                                                    <span id="range1">
-                                                    </span>
-                                                    <span> &dash; </span>
-                                                    <span id="range2">
-                                                    </span>
+                                                    <div class="containerr">
+                                                        <div class="slider-track"></div>
+                                                        <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                                                        <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                                                    </div>
+                                                    <div class="values mt-3">
+                                                        <span>Price:</span>
+                                                        <span id="range1">
+                                                            $550
+                                                        </span>
+                                                        <span> &dash; </span>
+                                                        <span id="range2">
+                                                            $600
+                                                        </span>
+                                                    </div>
                                                 </div>
-                                                <div class="container">
-                                                    <div class="slider-track"></div>
-                                                    <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
-                                                    <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
-                                                </div>
-                                                </div>
-                                            </div> -->
+                                            </div>
                                             <button class="filterBtn">Filter</button>
                                             <div class="productListingFilterBarImg">
                                                 <img src="assets/img/product/filterbarimg.jpg" alt="" srcset="">
                                             </div>
-                                            <div class="productFilterBoxHeading activeLine">Latest Product</div>
+                                            <div class="productFilterBoxHeadinggParent position-relative">
+                                                <div class="productFilterBoxHeadingg activeLine">Latest Product</div>
+                                            </div>
                                             <div class="filterBarProductListContainer">
                                                 <div class="row align-items-center filterBarProductListContainerMargin">
                                                     <div class="col-auto pe-0">
-                                                        <div class="productImgContainer">
+                                                        <a href="javascript:;" class="productImgContainer">
                                                             <img src="assets/img/product/filterimg1.png" alt="" srcset="">
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                     <div class="col ps-0">
                                                         <div class="filterBarProductListTxtBox">
@@ -408,7 +413,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-xl-9 col-lg-12">
+                                <div class="col-xl-9 col-12 py-5 py-xl-0">
                                     <div class="productListingRytPartTopBar">
                                         <div class="row ">
                                             <div class="col-12 d-flex justify-content-between align-items-center">
@@ -461,10 +466,10 @@
                                         </div>
                                     </div>
                                     <div class="bar2 d-xl-none d-block">
-                                        <div class="productListingRytPartTopBarFilter borderr">
+                                        <div class="productListingRytPartTopBarFilter borderr" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                             <div class="row mx-0 w-100">
                                                 <div class="col-12 px-0 d-flex justify-content-between align-items-center w-100">
-                                                    <div class="filtersContainer">
+                                                    <div class="filtersContainer" id="mobFilterBtn">
                                                         <img src="assets/img/svg/filtericonblack.svg" alt="" srcset="">
                                                         <span class="ms-1">Filters</span>
                                                     </div>
@@ -522,17 +527,6 @@
             sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
             }
         </script>
-        <!-- js for filterbar -->
-        <script>
-            let filtersContainer = document.querySelector('.filtersContainer')
-            let filterbarMainContainer = document.querySelector('.filterbarMainContainer')
 
-            filtersContainer.addEventListener('click', ()=>{
-                filtersContainer.classList.toggle('add')
-                    filterbarMainContainer.classList.remove('d-none')
-                    filterbarMainContainer.classList.add('widthh')
-
-            })
-        </script>
     </body>
 </html>
