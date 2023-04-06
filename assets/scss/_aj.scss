@@ -1,6 +1,96 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        .productDetails {
+            & .productImagSide {
+                & .productImgSlider {
+                    & .owl-nav {
+                        display: none;
+                    }
+                    & .owl-dots {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin: 0px auto;
+                        & button {
+                            width: 70px;
+                            height: 70px;
+                            border: 1px solid $black;
+                            & span {
+                                display: flex;
+                                background: url(../img/product/headphone.png) no-repeat, center;
+                                background-size: contain;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            & .productFullDetails {
+                & .contantsDetails {
+                    & .moreProduct {
+                        & a {
+                            font-size: 12px;
+                        }
+                    }
+                    & .productNmae {
+                        font-size: 30px;
+                    }
+                    & .rating {
+                        & .ratingList {
+                        }
+                        & .customerRating {
+                            font-size: 12px;
+                        }
+                    }
+                    & .productFithur {
+                        & ul {
+                            & li {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    & .productDiscuription {
+                        font-size: 14px;
+                    }
+                    & .productCode {
+                        font-size: 16px;
+                    }
+                }
+                & .offerDetails {
+                    & .availabilityProduct {
+                        font-size: 14px;
+                        border-bottom: 1px solid rgba($secondary, 0.2);
+                    }
+                    & .productValue {
+                        font-size: 25px;
+                    }
+                    & .chouseInputBtn {
+                        &  input{
+                            max-width: 100px;
+                            font-size: 14px;
+                        }
+                    }
+                    & .addCart {
+                        & .addCartBtn {
+                            font-size: 14px;
+                            transition: all ease-in-out 0.3s;
+                            &:hover{
+                                background-color: $black;
+                            }
+                        }
+                    }
+                    & .morebuttons {
+                        & a {
+                            font-size: 12px;
+                            & img {
+                                width: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -13,7 +103,6 @@
     @include media-breakpoint-up(xl) {}
 
     @include media-breakpoint-up(xxl) {}
-
 
     @include media-breakpoint-down(xxl) {}
 
@@ -31,7 +120,6 @@
         @include dark-media-breakpoint(basic) {
             
         }
-
         // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
         @include dark-media-breakpoint-up(sm) {
         }
@@ -43,8 +131,6 @@
         }
         @include dark-media-breakpoint-up(xxl) {
         }
-    
-    
         @include dark-media-breakpoint-down(xxl) {
         }
         @include dark-media-breakpoint-down(xl) {
