@@ -15,7 +15,12 @@
                         & button {
                             width: 70px;
                             height: 70px;
-                            border: 1px solid $black;
+                            border: none;
+                            border-bottom: 2px solid transparent;
+                            transition: ease-in-out .3s;
+                            &.active {
+                                border-color: $theme1;
+                            }
                             & span {
                                 display: flex;
                                 background: url(../img/product/headphone.png) no-repeat, center;
@@ -42,6 +47,9 @@
                         & .customerRating {
                             font-size: 12px;
                         }
+                    }
+                    & .brandingLogo {
+                        width: 100px;
                     }
                     & .productFithur {
                         & ul {
@@ -79,6 +87,26 @@
                                 background-color: $black;
                             }
                         }
+                        & .payLinkBtn {
+                            transition: ease-in-out .3s;
+                            font-size: 14px;
+                            &:hover {
+                                &.bg-opacity-75 {
+                                    --bs-bg-opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    
+                    & .diveider {
+                        font-size: 12px;
+                        &::after, &::before {
+                            content: '';
+                            display: block;
+                            width: 12px;
+                            height: 1px;
+                            background-color: $black;
+                        }
                     }
                     & .morebuttons {
                         & a {
@@ -90,6 +118,9 @@
                     }
                 }
             }
+        }
+        .productDecription {
+
         }
     }
 
@@ -106,13 +137,185 @@
 
     @include media-breakpoint-down(xxl) {}
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .productDetails {
+            & .productImagSide {
+                & .productImgSlider {
+                    & .owl-nav {
+                    }
+                    & .owl-dots {
+                        & button {
+                            & span {
+                            }
+                        }
+                    }
+                }
+            }
+            & .productFullDetails {
+                & .contantsDetails {
+                    & .moreProduct {
+                        & a {
+                        }
+                    }
+                    & .productNmae {
+                        font-size: 24px;
+                    }
+                    & .rating {
+                        & .ratingList {
+                        }
+                        & .customerRating {
+                        }
+                    }
+                    & .brandingLogo {
+                    }
+                    & .productFithur {
+                        & ul {
+                            & li {
+                            }
+                        }
+                    }
+                    & .productDiscuription {
+                    }
+                    & .productCode {
+                        font-size: 14px;
+                    }
+                }
+                & .offerDetails {
+                    & .availabilityProduct {
+                    }
+                    & .productValue {
+                    }
+                    & .chouseInputBtn {
+                        & input{
+                        }
+                    }
+                    & .addCart {
+                        & .addCartBtn {
+                            &:hover{
+                            }
+                        }
+                        & .payLinkBtn {
+                            &:hover {
+                                &.bg-opacity-75 {
+                                }
+                            }
+                        }
+                    }
+                    
+                    & .diveider {
+                        &::after, &::before {
+                        }
+                    }
+                    & .morebuttons {
+                        & a {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @include media-breakpoint-down(lg) {}
 
     @include media-breakpoint-down(md) {}
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .productDetails {
+            & .productImagSide {
+                & .productImgSlider {
+                    & .owl-nav {
+                    }
+                    & .owl-dots {
+                        & button {
+                            width: 50px;
+                            height: 50px;
+                            &.active {
+                            }
+                            & span {
+                            }
+                        }
+                    }
+                }
+            }
+            & .productFullDetails {
+                & .contantsDetails {
+                    & .moreProduct {
+                        & a {
+                        }
+                    }
+                    & .productNmae {
+                        font-size: 18px;
+                    }
+                    & .rating {
+                        & .ratingList {
+                        }
+                        & .customerRating {
+                            font-size: 12px;
+                        }
+                    }
+                    & .brandingLogo {
+                        width: 80px;
+                    }
+                    & .productFithur {
+                        & ul {
+                            & li {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    & .productDiscuription {
+                        font-size: 12px;
+                    }
+                    & .productCode {
+                        font-size: 14px;
+                    }
+                }
+                & .offerDetails {
+                    & .availabilityProduct {
+                        font-size: 12px;
+                        border-bottom: 1px solid rgba($secondary, 0.2);
+                    }
+                    & .productValue {
+                        font-size: 16px;
+                    }
+                    & .chouseInputBtn {
+                        &  input{
+                            font-size: 12px;
+                        }
+                    }
+                    & .addCart {
+                        & .addCartBtn {
+                            font-size: 12px;
+                            &:hover{
+                            }
+                        }
+                        & .payLinkBtn {
+                            font-size: 12px;
+                            &:hover {
+                            }
+                        }
+                    }
+                    
+                    & .diveider {
+                        font-size: 10px;
+                        &::after, &::before {
+                            width: 10px;
+                        }
+                    }
+                    & .morebuttons {
+                        & a {
+                            font-size: 10px;
+                            & img {
+                                width: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {
