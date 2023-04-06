@@ -164,16 +164,21 @@
             }
         }
         .cardSection {
+            padding-top: 2.143em;
+            padding-bottom: 2.143em;
             & .cardSectionInner {
                 & .cardOuter {
                     & .card {
+                        height: 100%;
+                        border: none;
                         & .card-body {
-                            border: none;
                             border-radius: 0;
                             background-color: #f5f5f5;
+                            padding: 0.8rem;
                             & .leftSide {
                                 & .imgOuter {
-                                    width: 173px;
+                                    width: 150px;
+                                    margin-right: 0.5em;
                                     & img {
 
                                     }
@@ -182,18 +187,122 @@
                             & .rightSide {
                                 & .rightSideInner {
                                     & .productHeading {
+                                        font-weight: 300;
+                                        text-transform: uppercase;
+                                        margin-bottom: 7px;
+                                        color: #333e48;
+                                        font-size: 17px;
+                                        line-height: 21px;
                                         & b {
-
+                                            font-weight: 700;
                                         }
                                     }
                                     & .shopNowUpto {
-
+                                        & .shoptNowBtn {
+                                            font-size: 14px;
+                                            line-height: 30px;
+                                            font-weight: 700;
+                                            display: flex;
+                                            align-items: center;
+                                            color: #333e48;
+                                            & .upto {
+                                                text-transform: uppercase;
+                                                font-weight: 300;
+                                                display: block;
+                                                & .prefix {
+                                                    font-size: .919em;
+                                                    line-height: .909em;
+                                                    display: inline-block;
+                                                    margin-right: 4px;
+                                                    width: 1.4em;
+                                                }
+                                                & .value {
+                                                    font-weight: 700;
+                                                    font-size: 2.173em;
+                                                    letter-spacing: -.025em;
+                                                }
+                                                & .suffix {
+                                                    top: -0.5em;
+                                                    position: relative;
+                                                    font-weight: 700;
+                                                    vertical-align: top;
+                                                    margin-left: 2px;
+                                                }
+                                            }
+                                            & img {
+                                                width: 18px;
+                                                height: 18px;
+                                                border-radius: 50%;
+                                                margin-left: 8px;
+                                                background-color: #fed700;
+                                                padding: 1px;
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
+            }
+        }
+        .bestDealsSection {
+            padding-top: 1.786em;
+            padding-bottom: 1.786em;
+            background-color: #f4f4f4;
+            & .nav-tabs {
+                flex-wrap: nowrap;
+                & .nav-item {
+                    padding-left: 0;
+                    margin-left: 2.214em;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    & .nav-link {
+                        white-space: nowrap;
+                        padding-left: 0;
+                        padding-right: 0;
+                        font-size: 1.071em;
+                        padding-bottom: 0.722em;
+                        line-height: 1.059em;
+                        text-align: center;
+                        color: #333e48;
+                        transition: color .15s ease-in-out,background-color .15s ease-in-out;
+                        border: none;
+                        &.active {
+                            font-weight: 700;
+                            position: relative;
+                            background-color: transparent;
+                            border: none;
+                            &::before{    content: ' ';
+                                height: 4px;
+                                width: 10px;
+                                display: block;
+                                position: absolute;
+                                bottom: -5px;
+                                left: 50%;
+                                border-radius: 0 0 10px 10px;
+                                transform: translateX(-50%);
+                                background-color: #fed700;
+                            }
+                            &::after {
+                                content: ' ';
+                                border-bottom: 2px solid transparent;
+                                display: block;
+                                position: absolute;
+                                bottom: -1px;
+                                width: 100%;
+                                border-color: #fed700
+                            }
+                        }
+                        &:hover {
+                            border: none;
+                        }
+                    }
+                }
+            }
+            & .tab-content {
+                background-color: #fff;
             }
         }
     }
@@ -211,6 +320,48 @@
 
 
     @include media-breakpoint-down(xxl) {
+        .cardSection {
+            & .cardSectionInner {
+                & .cardOuter {
+                    & .card {
+                        & .card-body {
+                            & .leftSide {
+                                & .imgOuter {
+                                    width: 120px;
+                                    & img {
+
+                                    }
+                                }
+                            }
+                            & .rightSide {
+                                & .rightSideInner {
+                                    & .productHeading {
+                                        font-size: 15px;
+                                        line-height: 20px;                                    
+                                        & b {
+                                        }
+                                    }
+                                    & .shopNowUpto {
+                                        & .shoptNowBtn {
+                                            & .upto {
+                                                & .prefix {
+                                                }
+                                                & .value {
+                                                }
+                                                & .suffix {
+                                                }
+                                            }
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -421,6 +572,56 @@
                     & .owl-dots {
                         & .owl-dot {
                             &.active {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cardSection {
+            padding-top: 1.143em;
+            padding-bottom: 1.143em;
+            & .cardSectionInner {
+                & .cardOuter {
+                    padding: 0;
+                    margin-right: 8px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    & .card {
+                        & .card-body {
+                            & .leftSide {
+                                & .imgOuter {
+                                    width: 145px;
+                                    & img {
+
+                                    }
+                                }
+                            }
+                            & .rightSide {
+                                max-width: 124px;
+                                & .rightSideInner {
+                                    & .productHeading {  
+                                        font-size: 14px;
+                                        line-height: 1.278em;                               
+                                        & b {
+                                        }
+                                    }
+                                    & .shopNowUpto {
+                                        & .shoptNowBtn {
+                                            & .upto {
+                                                & .prefix {
+                                                }
+                                                & .value {
+                                                }
+                                                & .suffix {
+                                                }
+                                            }
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
