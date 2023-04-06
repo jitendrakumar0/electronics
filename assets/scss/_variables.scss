@@ -123,8 +123,15 @@ $endbar-width:                            70px !default;
   --endbar-width: #{$endbar-width};
 }
 
-
-
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1400px
+);
+// scss-docs-end container-max-widths
 
 
 
