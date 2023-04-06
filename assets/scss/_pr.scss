@@ -9,11 +9,25 @@
             &.productBorderCard {
                 border: 1px solid #f4f4f4;
             }
+            &.productRightBorderCard {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 80%;
+                    width: 1px;
+                    background-color: #f4f4f4;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
             & .productCategory {
                 font-size: .857em;
                 line-height: 1.05em;
                 color: $gray-600;
                 margin-bottom: 8px;
+                position: relative;
+                z-index: 2;
             }
             & .productName {
                 font-size: 1em;
@@ -52,6 +66,8 @@
                 width: 35px;
                 background-color: $gray-300;
                 transition: 0.3s ease-in-out;
+                position: relative;
+                z-index: 5;
                 & img {
                     height: 18px;
                 }
@@ -60,19 +76,11 @@
                 transition: 0.3s ease-in-out;
                 background-color: white;
                 position: relative;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: -16px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 100%;
-                    height: 1px;
-                    background-color: $white;
-                }
+                z-index: 2;
             }
             & .hoverBtns {
                 position: absolute;
+                z-index: 2;
                 background-color: white;
                 bottom: 0;
                 left: 0;
@@ -95,6 +103,16 @@
                         opacity: 0.8;
                     }
                 }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 82%;
+                    height: 1px;
+                    background-color: $white;
+                }
             }
             &:hover {
                 & .iconBox {
@@ -102,13 +120,12 @@
                 }
                 & .hoverBtns {
                     transform: translateY(0);
-                    
-                }
-                & .priceHover {
-                    transform: translateY(-40px);
                     &::before {
                         background-color: #f4f4f4;
                     }
+                }
+                & .priceHover {
+                    transform: translateY(-40px);
                 }
             }
         }
@@ -126,15 +143,263 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        .productCard {
+            &.productBorderCard {
+            }
+            &.productRightBorderCard {
+                &::after {
+                }
+            }
+            & .productCategory {
+            }
+            & .productName {
+            }
+            & .productImage {
+                & img {
+                }
+            }
+            & .productOldPrice {
+            }
+            & .productPrice {
+            }
+            & .iconBox {
+                & img {
+                }
+            }
+            & .priceHover {
+            }
+            & .hoverBtns {
+                & .hiddenBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                }
+                &::before {
+                }
+            }
+            &:hover {
+                & .iconBox {
+                }
+                & .hoverBtns {
+                    &::before {
+                    }
+                }
+                & .priceHover {
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        
+        .productCard {
+            &.productBorderCard {
+            }
+            &.productRightBorderCard {
+                &::after {
+                }
+            }
+            & .productCategory {
+            }
+            & .productName {
+            }
+            & .productImage {
+                & img {
+                }
+            }
+            & .productOldPrice {
+            }
+            & .productPrice {
+            }
+            & .iconBox {
+                & img {
+                }
+            }
+            & .priceHover {
+            }
+            & .hoverBtns {
+                & .hiddenBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                }
+                &::before {
+                }
+            }
+            &:hover {
+                & .iconBox {
+                }
+                & .hoverBtns {
+                    &::before {
+                    }
+                }
+                & .priceHover {
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        
+        .productCard {
+            &.productBorderCard {
+            }
+            &.productRightBorderCard {
+                &::after {
+                }
+            }
+            & .productCategory {
+            }
+            & .productName {
+            }
+            & .productImage {
+                & img {
+                }
+            }
+            & .productOldPrice {
+            }
+            & .productPrice {
+            }
+            & .iconBox {
+                & img {
+                }
+            }
+            & .priceHover {
+            }
+            & .hoverBtns {
+                & .hiddenBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                }
+                &::before {
+                }
+            }
+            &:hover {
+                & .iconBox {
+                }
+                & .hoverBtns {
+                    &::before {
+                    }
+                }
+                & .priceHover {
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        
+        .productCard {
+            &.productBorderCard {
+            }
+            &.productRightBorderCard {
+                &::after {
+                }
+            }
+            & .productCategory {
+            }
+            & .productName {
+            }
+            & .productImage {
+                & img {
+                }
+            }
+            & .productOldPrice {
+            }
+            & .productPrice {
+            }
+            & .iconBox {
+                & img {
+                }
+            }
+            & .priceHover {
+            }
+            & .hoverBtns {
+                & .hiddenBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                }
+                &::before {
+                }
+            }
+            &:hover {
+                & .iconBox {
+                }
+                & .hoverBtns {
+                    &::before {
+                    }
+                }
+                & .priceHover {
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        
+        .productCard {
+            padding: 1rem;
+            &.productBorderCard {
+            }
+            &.productRightBorderCard {
+                &::after {
+                }
+            }
+            & .productCategory {
+                font-size: .75rem;
+            }
+            & .productName {
+                font-size: 0.9rem;
+            }
+            & .productImage {
+                height: unset;
+                aspect-ratio: 16/14;
+                & img {
+                }
+            }
+            & .productOldPrice {
+            }
+            & .productPrice {
+                font-size: 1.2em;
+            }
+            & .iconBox {
+                height: 32px;
+                width: 32px;
+                & img {
+                    height: 16px;
+                }
+            }
+            & .priceHover {
+            }
+            & .hoverBtns {
+                & .hiddenBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                }
+                &::before {
+                }
+            }
+            &:hover {
+                & .iconBox {
+                }
+                & .hoverBtns {
+                    &::before {
+                    }
+                }
+                & .priceHover {
+                }
+            }
+        }
+    }
 
 
 [data-bs-theme=dark] {
