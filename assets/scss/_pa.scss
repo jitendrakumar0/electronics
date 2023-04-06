@@ -683,15 +683,92 @@
                     }
                 }
             }
-            & .last{
-                & img{
-                    width: 100%;
-                    height: 100%;
+        }
+    }
+    .last{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        & img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+// footer
+    .footerFluid{
+        background-color: lighten($color: $black, $amount: 97);
+        & .footerContainer{
+            & .footerPadding{
+                padding: 4.28em 0 4.44em;
+                & .footerLogo{
+                    width: 156px;
+                    height: 37px;
+                    overflow: hidden;
+                    margin-bottom: 1.55em;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .HeadphoneBox{
+                    margin-bottom: 3em;
+                    & .headphone{
+                        & img{
+                            font-size: 4.643em;
+                        }
+                    }
+                    & .headphoneTxtBox{
+                        & span:first-child{
+                            font-weight: 200;
+                            font-size: .929em;
+                            display: block;
+                            line-height: 1.429em;
+                            color: $black;
+                        }
+                        & span:last-child{
+                            font-size: 1.571em;
+                            display: block;
+                            line-height: 1.429em;
+                            color: $black;
+                        }
+                    }
+                }
+                & .contactInfo{
+                    color: $black;
+                }
+                & .contactDetail{                        
+                    color: lighten($color: $black, $amount: 30);
+                    margin-bottom: 1.2em;
+                }
+                & .socialLinksBox{
+                    & .socialImg{
+                        height: 20px;
+                        filter: brightness(0.1);
+                        &:hover{
+                        filter: brightness(1);
+                        }
+                    }
+                }
+                & .FooterSecondHeading{
+                    font-size: 1.143em;
+                    line-height: 1.125em;
+                    margin-bottom: 1.6em;
+                    font-weight: 700;
+                }
+                & .footerUl{
+                    & .footerLi{
+                        font-size: 1em;
+                        margin-top:0.4em ;
+                        & .footerliAnchor{
+                            color: lighten($color: $black, $amount: 30);
+                        }
+                    }
                 }
             }
         }
     }
-
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
 

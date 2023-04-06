@@ -939,9 +939,79 @@ body .overflow-auto-hidden {
   font-size: 0.928em;
   color: #adb5bd;
 }
-.featuredSectionBox .productDetailBox .last img {
+
+.last {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  display: block;
+}
+.last img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footerFluid {
+  background-color: #f7f7f7;
+}
+.footerFluid .footerContainer .footerPadding {
+  padding: 4.28em 0 4.44em;
+}
+.footerFluid .footerContainer .footerPadding .footerLogo {
+  width: 156px;
+  height: 37px;
+  overflow: hidden;
+  margin-bottom: 1.55em;
+}
+.footerFluid .footerContainer .footerPadding .footerLogo img {
+  width: 100%;
+  height: 100%;
+}
+.footerFluid .footerContainer .footerPadding .HeadphoneBox {
+  margin-bottom: 3em;
+}
+.footerFluid .footerContainer .footerPadding .HeadphoneBox .headphone img {
+  font-size: 4.643em;
+}
+.footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
+  font-weight: 200;
+  font-size: 0.929em;
+  display: block;
+  line-height: 1.429em;
+  color: #000;
+}
+.footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
+  font-size: 1.571em;
+  display: block;
+  line-height: 1.429em;
+  color: #000;
+}
+.footerFluid .footerContainer .footerPadding .contactInfo {
+  color: #000;
+}
+.footerFluid .footerContainer .footerPadding .contactDetail {
+  color: #4d4d4d;
+  margin-bottom: 1.2em;
+}
+.footerFluid .footerContainer .footerPadding .socialLinksBox .socialImg {
+  height: 20px;
+  filter: brightness(0.1);
+}
+.footerFluid .footerContainer .footerPadding .socialLinksBox .socialImg:hover {
+  filter: brightness(1);
+}
+.footerFluid .footerContainer .footerPadding .FooterSecondHeading {
+  font-size: 1.143em;
+  line-height: 1.125em;
+  margin-bottom: 1.6em;
+  font-weight: 700;
+}
+.footerFluid .footerContainer .footerPadding .footerUl .footerLi {
+  font-size: 1em;
+  margin-top: 0.4em;
+}
+.footerFluid .footerContainer .footerPadding .footerUl .footerLi .footerliAnchor {
+  color: #4d4d4d;
 }
 
 @media (max-width: 767.98px) {
