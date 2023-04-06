@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="container-fluid cardSection">
-                        <div class="container">
+                        <div class="container p-0">
                             <div class="row">
                                 <div class="col-12 cardSectionInner">
                                     <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 flex-nowrap overflow-auto-hidden">
@@ -307,40 +307,364 @@
                     <div class="container-fluid bestDealsSection">
                         <div class="container p-0">
                             <div class="row">
-                                <div class="col-auto mx-auto overflow-auto-hidden pb-1 mb-2">
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="bestDeals" data-bs-toggle="tab" data-bs-target="#bestDeals-pane" type="button" role="tab" aria-controls="bestDeals-pane" aria-selected="true">Best Deals</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="tvAndAudio" data-bs-toggle="tab" data-bs-target="#tvAndAudio-pane" type="button" role="tab" aria-controls="tvAndAudio-pane" aria-selected="false">TV & Audio</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="cameras" data-bs-toggle="tab" data-bs-target="#cameras-pane" type="button" role="tab" aria-controls="cameras-pane" aria-selected="false">Cameras</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="audio" data-bs-toggle="tab" data-bs-target="#audio-pane" type="button" role="tab" aria-controls="audio-pane" aria-selected="false">Audio</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="smartPhone" data-bs-toggle="tab" data-bs-target="#smartPhone-pane" type="button" role="tab" aria-controls="smartPhone-pane" aria-selected="false">Smartphones</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="gpsAndNavi" data-bs-toggle="tab" data-bs-target="#gpsAndNavi-pane" type="button" role="tab" aria-controls="gpsAndNavi-pane" aria-selected="false">GPS & Navi</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="computers" data-bs-toggle="tab" data-bs-target="#computers-pane" type="button" role="tab" aria-controls="computers-pane" aria-selected="false">Computers</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="portableAudio" data-bs-toggle="tab" data-bs-target="#portableAudio-pane" type="button" role="tab" aria-controls="portableAudio-pane" aria-selected="false">Portable Audio</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="accessories" data-bs-toggle="tab" data-bs-target="#accessories-pane" type="button" role="tab" aria-controls="accessories-pane" aria-selected="false">Accessories</button>
-                                        </li>
-                                    </ul>
+                                <div class="col-12">
+                                    <div class="row mx-0">
+                                        <div class="col-12 pb-2 px-0 overflow-auto-hidden">
+                                            <div class="row navOuter mx-0 mb-2">
+                                                <div class="col-auto mx-auto px-0">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link active" id="bestDeals" data-bs-toggle="tab" data-bs-target="#bestDeals-pane" type="button" role="tab" aria-controls="bestDeals-pane" aria-selected="true">Best Deals</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="tvAndAudio" data-bs-toggle="tab" data-bs-target="#tvAndAudio-pane" type="button" role="tab" aria-controls="tvAndAudio-pane" aria-selected="false">TV & Audio</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="cameras" data-bs-toggle="tab" data-bs-target="#cameras-pane" type="button" role="tab" aria-controls="cameras-pane" aria-selected="false">Cameras</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="audio" data-bs-toggle="tab" data-bs-target="#audio-pane" type="button" role="tab" aria-controls="audio-pane" aria-selected="false">Audio</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="smartPhone" data-bs-toggle="tab" data-bs-target="#smartPhone-pane" type="button" role="tab" aria-controls="smartPhone-pane" aria-selected="false">Smartphones</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="gpsAndNavi" data-bs-toggle="tab" data-bs-target="#gpsAndNavi-pane" type="button" role="tab" aria-controls="gpsAndNavi-pane" aria-selected="false">GPS & Navi</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="computers" data-bs-toggle="tab" data-bs-target="#computers-pane" type="button" role="tab" aria-controls="computers-pane" aria-selected="false">Computers</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="portableAudio" data-bs-toggle="tab" data-bs-target="#portableAudio-pane" type="button" role="tab" aria-controls="portableAudio-pane" aria-selected="false">Portable Audio</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                          <button class="nav-link" id="accessories" data-bs-toggle="tab" data-bs-target="#accessories-pane" type="button" role="tab" aria-controls="accessories-pane" aria-selected="false">Accessories</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="bestDeals-pane" role="tabpanel" aria-labelledby="bestDeals" tabindex="0">1</div>
+                                        <div class="tab-pane fade show active" id="bestDeals-pane" role="tabpanel" aria-labelledby="bestDeals" tabindex="0">
+                                            <div class="row mx-0">
+                                                <div class="col-xxl-4 col">
+                                                    <div class="row row-cols-xxl-2 row-cols-lg-1 row-cols-2">
+                                                        <div class="col">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product2.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Laptops</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Laptop Screener CX70 2QF-621XPL 17.3″ 4210</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product1.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <!-- <span class="productOldPrice d-block">₹210.00</span> -->
+                                                                            <span class="productPrice d-block">$2,399</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col d-lg-none d-xxl-block">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product3.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col d-lg-none d-xxl-block">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product4.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-6 col-lg-5 col-12">
+                                                    <div class="row h-100">
+                                                        <div class="col">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Game Consoles</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName px-0">Game Console Controller + USB 3.0 Cable</a>
+                                                                <div class="col-12 productImage px-0 flex-fill">
+                                                                    <img src="./assets/img/product/consal.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 mb-4">
+                                                                        <div class="col-12 extraImgOuter px-0">
+                                                                            <a href="javascript:;" class="extramImg">
+                                                                                <img src="assets/img/product/ex1.png" class="w-100 h-100" alt="">
+                                                                            </a>
+                                                                            <a href="javascript:;" class="extramImg">
+                                                                                <img src="assets/img/product/gade1-150x150.png" class="w-100 h-100" alt="">
+                                                                            </a>
+                                                                            <a href="javascript:;" class="extramImg">
+                                                                                <img src="assets/img/product/consal.png" class="w-100 h-100" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">$2.00</span>
+                                                                            <span class="productPrice d-block">$99.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center cartBtn rounded-pill w-auto px-3">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" class="me-2" alt="cart Icon"> <span>Add to cart</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col">
+                                                    <div class="row row-cols-xxl-2 row-cols-lg-1 row-cols-2">
+                                                        <div class="col">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product5.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product6.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col d-lg-none d-xxl-block">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product7.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col d-lg-none d-xxl-block">
+                                                            <div class="row productCard productBorderCard flex-column">
+                                                                <a href="#" class="col-12 productCategory px-0">Power Banks</a>
+                                                                <a href="javascript:;" class="col-12 stretched-link productName flex-fill px-0">Powerbank 1130 mAh Blue</a>
+                                                                <div class="col-12 productImage px-0">
+                                                                    <img src="./assets/img/product/product1.png" alt="product image">
+                                                                </div>
+                                                                <div class="col-12 px-0 priceHover">
+                                                                    <div class="row mx-0 align-items-end">
+                                                                        <div class="col px-0">
+                                                                            <span class="productOldPrice d-block">₹210.00</span>
+                                                                            <span class="productPrice d-block">₹200.00</span>
+                                                                        </div>
+                                                                        <div class="col-auto pe-0">
+                                                                            <a href="#" class="iconBox d-flex align-items-center justify-content-center rounded-circle">
+                                                                                <img src="./assets/img/svg/cartWhite.svg" alt="cart Icon">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 px-0 hoverBtns">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn wishListBtn"><img src="./assets/img/svg/wishlist.svg" alt="wishlist icon"> Wishlist</button>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <button class="btn hiddenBtn compareBtn"><img src="./assets/img/svg/compare.png" alt="compare icon"> Compare</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="tab-pane fade" id="tvAndAudio-pane" role="tabpanel" aria-labelledby="tvAndAudio" tabindex="0">2</div>
                                         <div class="tab-pane fade" id="cameras-pane" role="tabpanel" aria-labelledby="cameras" tabindex="0">3</div>
                                         <div class="tab-pane fade" id="audio-pane" role="tabpanel" aria-labelledby="audio" tabindex="0">4</div>
