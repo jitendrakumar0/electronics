@@ -317,7 +317,7 @@
                             border-radius: 5px;
                             background-color: $gray-200;
                             padding: 8px 30px;
-                            margin-bottom: 3.3em;
+                            margin-bottom: 2.3em;
                             &:hover{
                                 background-color: $black;
                                 color: $white;
@@ -469,6 +469,135 @@
                         }
                         & span{
                             font-size: .875rem;
+                        }
+                    }
+                }
+                & .productCard {
+                    background-color: $white;
+                    padding: 1.429em 1.714em 1em;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    &.productBorderCard {
+                        border: 1px solid #f4f4f4;
+                    }
+                    &.productRightBorderCard {
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            height: 80%;
+                            width: 1px;
+                            background-color: #f4f4f4;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    & .productCategory {
+                        font-size: .857em;
+                        line-height: 1.05em;
+                        color: $gray-600;
+                        margin-bottom: 8px;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    & .productName {
+                        font-size: 1em;
+                        line-height: 1.28572em;
+                        color: $theme3;
+                        font-weight: 700;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    & .productImage {
+                        height: 200px;
+                        margin: 15px 0;
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    & .productOldPrice {
+                        font-size: .7em;
+                        line-height: 1.5em;
+                        color: $gray-700;
+                        text-decoration: line-through;
+                    }
+                    & .productPrice {
+                        font-size: 1.429em;
+                        font-weight: 400;
+                        color: $gray-700;
+                        line-height: 1em;
+                    }
+                    & .iconBox {
+                        height: 35px;
+                        width: 35px;
+                        background-color: $gray-300;
+                        transition: 0.3s ease-in-out;
+                        position: relative;
+                        z-index: 5;
+                        & img {
+                            height: 18px;
+                        }
+                    }
+                    & .priceHover {
+                        transition: 0.3s ease-in-out;
+                        background-color: white;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    & .hoverBtns {
+                        position: absolute;
+                        z-index: 2;
+                        background-color: white;
+                        bottom: 0;
+                        left: 0;
+                        transform: translateY(40px);
+                        transition: 0.3s ease-in-out;
+                        & .hiddenBtn {
+                            font-size: .857em;
+                            line-height: 1.05em;
+                            color: $gray-600;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 40px;
+                            & img {
+                                height: 15px;
+                                margin-right: 5px;
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 2px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 82%;
+                            height: 1px;
+                            background-color: $white;
+                        }
+                    }
+                    &:hover {
+                        & .iconBox {
+                            background-color: $theme1;
+                        }
+                        & .hoverBtns {
+                            transform: translateY(0);
+                            &::before {
+                                background-color: #f4f4f4;
+                            }
+                        }
+                        & .priceHover {
+                            transform: translateY(-40px);
                         }
                     }
                 }

@@ -169,11 +169,23 @@ body .overflow-auto-hidden {
 .productCard.productBorderCard {
   border: 1px solid #f4f4f4;
 }
+.productCard.productRightBorderCard::after {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 1px;
+  background-color: #f4f4f4;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .productCard .productCategory {
   font-size: 0.857em;
   line-height: 1.05em;
   color: #6c757d;
   margin-bottom: 8px;
+  position: relative;
+  z-index: 2;
 }
 .productCard .productName {
   font-size: 1em;
@@ -212,6 +224,8 @@ body .overflow-auto-hidden {
   width: 35px;
   background-color: #dee2e6;
   transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 5;
 }
 .productCard .iconBox img {
   height: 18px;
@@ -220,19 +234,11 @@ body .overflow-auto-hidden {
   transition: 0.3s ease-in-out;
   background-color: white;
   position: relative;
-}
-.productCard .priceHover::before {
-  content: "";
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
+  z-index: 2;
 }
 .productCard .hoverBtns {
   position: absolute;
+  z-index: 2;
   background-color: white;
   bottom: 0;
   left: 0;
@@ -256,19 +262,54 @@ body .overflow-auto-hidden {
 .productCard .hoverBtns .hiddenBtn:hover {
   opacity: 0.8;
 }
+.productCard .hoverBtns::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 82%;
+  height: 1px;
+  background-color: #fff;
+}
 .productCard:hover .iconBox {
   background-color: #fed700;
 }
 .productCard:hover .hoverBtns {
   transform: translateY(0);
 }
+.productCard:hover .hoverBtns::before {
+  background-color: #f4f4f4;
+}
 .productCard:hover .priceHover {
   transform: translateY(-40px);
 }
-.productCard:hover .priceHover::before {
-  background-color: #f4f4f4;
-}
 
+@media (max-width: 575.98px) {
+  .productCard {
+    padding: 1rem;
+  }
+  .productCard .productCategory {
+    font-size: 0.75rem;
+  }
+  .productCard .productName {
+    font-size: 0.9rem;
+  }
+  .productCard .productImage {
+    height: unset;
+    aspect-ratio: 16/14;
+  }
+  .productCard .productPrice {
+    font-size: 1.2em;
+  }
+  .productCard .iconBox {
+    height: 32px;
+    width: 32px;
+  }
+  .productCard .iconBox img {
+    height: 16px;
+  }
+}
 .breadcrumbFluid .breadcrumbContainer .productListingBreadcrumb {
   padding: 20px 0 15px 0;
 }
@@ -564,7 +605,7 @@ body .overflow-auto-hidden {
   border-radius: 5px;
   background-color: #e9ecef;
   padding: 8px 30px;
-  margin-bottom: 3.3em;
+  margin-bottom: 2.3em;
 }
 .productListingFluid .productListingContainer .filterbarMainContainer .productFilterBox .filterBtn:hover {
   background-color: #000;
@@ -696,6 +737,131 @@ body .overflow-auto-hidden {
 }
 .productListingFluid .productListingContainer .productListingRytPartTopBarFilter .filtersContainer span {
   font-size: 0.875rem;
+}
+.productListingFluid .productListingContainer .productCard {
+  background-color: #fff;
+  padding: 1.429em 1.714em 1em;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.productListingFluid .productListingContainer .productCard.productBorderCard {
+  border: 1px solid #f4f4f4;
+}
+.productListingFluid .productListingContainer .productCard.productRightBorderCard::after {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 1px;
+  background-color: #f4f4f4;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.productListingFluid .productListingContainer .productCard .productCategory {
+  font-size: 0.857em;
+  line-height: 1.05em;
+  color: #6c757d;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 2;
+}
+.productListingFluid .productListingContainer .productCard .productName {
+  font-size: 1em;
+  line-height: 1.28572em;
+  color: #0062bd;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.productListingFluid .productListingContainer .productCard .productImage {
+  height: 200px;
+  margin: 15px 0;
+}
+.productListingFluid .productListingContainer .productCard .productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.productListingFluid .productListingContainer .productCard .productOldPrice {
+  font-size: 0.7em;
+  line-height: 1.5em;
+  color: #495057;
+  text-decoration: line-through;
+}
+.productListingFluid .productListingContainer .productCard .productPrice {
+  font-size: 1.429em;
+  font-weight: 400;
+  color: #495057;
+  line-height: 1em;
+}
+.productListingFluid .productListingContainer .productCard .iconBox {
+  height: 35px;
+  width: 35px;
+  background-color: #dee2e6;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 5;
+}
+.productListingFluid .productListingContainer .productCard .iconBox img {
+  height: 18px;
+}
+.productListingFluid .productListingContainer .productCard .priceHover {
+  transition: 0.3s ease-in-out;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+.productListingFluid .productListingContainer .productCard .hoverBtns {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform: translateY(40px);
+  transition: 0.3s ease-in-out;
+}
+.productListingFluid .productListingContainer .productCard .hoverBtns .hiddenBtn {
+  font-size: 0.857em;
+  line-height: 1.05em;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+.productListingFluid .productListingContainer .productCard .hoverBtns .hiddenBtn img {
+  height: 15px;
+  margin-right: 5px;
+}
+.productListingFluid .productListingContainer .productCard .hoverBtns .hiddenBtn:hover {
+  opacity: 0.8;
+}
+.productListingFluid .productListingContainer .productCard .hoverBtns::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 82%;
+  height: 1px;
+  background-color: #fff;
+}
+.productListingFluid .productListingContainer .productCard:hover .iconBox {
+  background-color: #fed700;
+}
+.productListingFluid .productListingContainer .productCard:hover .hoverBtns {
+  transform: translateY(0);
+}
+.productListingFluid .productListingContainer .productCard:hover .hoverBtns::before {
+  background-color: #f4f4f4;
+}
+.productListingFluid .productListingContainer .productCard:hover .priceHover {
+  transform: translateY(-40px);
 }
 
 @media (max-width: 767.98px) {
