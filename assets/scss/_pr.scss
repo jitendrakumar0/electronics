@@ -291,12 +291,14 @@
                         align-items: center;
                         justify-content: space-between;
                         height: 50px;
+                        font-size: 15px;
                         background-color: lighten($gray-600, 53);
                         padding: 0 1.387em;
                         color: $gray-600;
                         border-bottom: 1px solid $gray-300;
                         & img {
                             transition: 0.3s ease-in-out;
+                            height: 12px;
                         }
                         &:not(.collapsed) {
                             & img {
@@ -313,6 +315,7 @@
                         background-color: $gray-200;
                         border-bottom: 1px solid $gray-500;
                         font-weight: 700;
+                        font-size: 15px;
                     }
                     & .offcanvasInnerAnchor {
                         display: flex;
@@ -322,6 +325,7 @@
                         color: $gray-600;
                         background-color: $gray-200;
                         border-bottom: 1px solid $gray-500;
+                        font-size: 15px;
                     }
                 }
             }
@@ -462,6 +466,7 @@
             font-size: 1.571em;
             font-weight: 400;
             color: $theme2;
+            padding: 0 1.3rem;
             & .headOuter {
                 border-bottom: 1px solid $gray-300;
             }
@@ -650,6 +655,30 @@
                 }
             }
         }
+        .menuOffcanvas {
+            & .offcanvas-body {
+                & .offcanvasLink {
+                    & .offcanvasAnchor {
+                        & img {
+                        }
+                        &:not(.collapsed) {
+                            & img {
+                            }
+                        }
+                    }
+                    & .offcanvasAnchorHead {
+                    }
+                    & .offcanvasInnerAnchor {
+                    }
+                }
+            }
+        }
+        .categoryListHeading {
+            & .headOuter {
+            }
+            & .head {
+            }
+        }
         .productCategoryCard {
             & .categoryImage {
                 & img {
@@ -819,6 +848,30 @@
                 }
             }
         }
+        .menuOffcanvas {
+            & .offcanvas-body {
+                & .offcanvasLink {
+                    & .offcanvasAnchor {
+                        & img {
+                        }
+                        &:not(.collapsed) {
+                            & img {
+                            }
+                        }
+                    }
+                    & .offcanvasAnchorHead {
+                    }
+                    & .offcanvasInnerAnchor {
+                    }
+                }
+            }
+        }
+        .categoryListHeading {
+            & .headOuter {
+            }
+            & .head {
+            }
+        }
         .productCategoryCard {
             & .categoryImage {
                 & img {
@@ -974,6 +1027,31 @@
                 }
             }
         }
+        .menuOffcanvas {
+            & .offcanvas-body {
+                & .offcanvasLink {
+                    & .offcanvasAnchor {
+                        & img {
+                        }
+                        &:not(.collapsed) {
+                            & img {
+                            }
+                        }
+                    }
+                    & .offcanvasAnchorHead {
+                    }
+                    & .offcanvasInnerAnchor {
+                    }
+                }
+            }
+        }
+        .categoryListHeading {
+            font-size: 1.3rem;
+            & .headOuter {
+            }
+            & .head {
+            }
+        }
         .productCategoryCard {
             & .categoryImage {
                 & img {
@@ -1034,7 +1112,6 @@
                 }
             }
         }
-        
         .topNavbar {
             & .topBar {
                 & .welcomeText {
@@ -1128,6 +1205,40 @@
                 }
                 & .shippingText {
                 }
+            }
+        }
+        .menuOffcanvas {
+            width: 280px !important;
+            border: 0;
+            & .offcanvas-body {
+                & .offcanvasLink {
+                    & .offcanvasAnchor {
+                        font-size: 14px;
+                        height: 46px;
+                        & img {
+                        }
+                        &:not(.collapsed) {
+                            & img {
+                            }
+                        }
+                    }
+                    & .offcanvasAnchorHead {
+                        font-size: 14px;
+                        height: 46px;
+                    }
+                    & .offcanvasInnerAnchor {
+                        font-size: 14px;
+                        height: 46px;
+                    }
+                }
+            }
+        }
+        .categoryListHeading {
+            font-size: 1.2rem;
+            font-weight: 500;
+            & .headOuter {
+            }
+            & .head {
             }
         }
         .productCategoryCard {
@@ -1299,6 +1410,31 @@
                 }
                 & .shippingText {
                 }
+            }
+        }
+        .menuOffcanvas {
+            & .offcanvas-body {
+                & .offcanvasLink {
+                    & .offcanvasAnchor {
+                        & img {
+                        }
+                        &:not(.collapsed) {
+                            & img {
+                            }
+                        }
+                    }
+                    & .offcanvasAnchorHead {
+                    }
+                    & .offcanvasInnerAnchor {
+                    }
+                }
+            }
+        }
+        .categoryListHeading {
+            & .headOuter {
+                font-size: 1rem;
+            }
+            & .head {
             }
         }
         .productCategoryCard {
