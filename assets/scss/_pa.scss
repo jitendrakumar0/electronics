@@ -633,8 +633,12 @@
                 }
                 & .footerUl{
                     & .footerLi{
-                        font-size: 1em;
+                        font-size: 0.95em;
                         margin-top:0.4em ;
+                        transition: 0.3s linear;
+                        &:hover{
+                            transform: translateX(10px);
+                        }
                         & .footerliAnchor{
                             color: lighten($color: $black, $amount: 30);
                         }
@@ -686,6 +690,7 @@
                 padding: .734em 2em;
                 height: 41px;
                 font-size: 16px;
+                border: none;
             }
             & .newsletterBtn{
                 background-color: $black;
@@ -698,6 +703,7 @@
                 height: 41px;
                 width: 91px;
                 font-size: 16px;
+                padding-bottom: 4px;
             }
         }
     }
@@ -1232,7 +1238,7 @@
                         & .headphoneTxtBox{
                             margin-bottom: 2em;
                             & span:first-child{
-                                font-size: 12px;
+                                font-size: 14px;
                             }
                             & span:last-child{
                                 font-size: 14px;
@@ -1486,7 +1492,7 @@
                         & .headphoneTxtBox{
                             margin-bottom: 2em;
                             & span:first-child{
-                                font-size: 12px;
+                                font-size: 14px;
                             }
                             & span:last-child{
                                 font-size: 14px;
@@ -1749,7 +1755,7 @@
                         & .headphoneTxtBox{
                             margin-bottom: 2em;
                             & span:first-child{
-                                font-size: 12px;
+                                font-size: 14px;
                             }
                             & span:last-child{
                                 font-size: 14px;
