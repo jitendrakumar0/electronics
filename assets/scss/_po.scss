@@ -1,6 +1,140 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        .storeDirectoryHeading {
+            text-align: center;
+            margin-bottom: 40.99px;
+            font-size: 42px;
+            letter-spacing: -.025em;
+            color: lighten($color: $black, $amount: 30);
+        }
+        .storeDirectoryListing {
+            hr{
+                border: 1px solid;
+                margin: 0;
+            }
+            & .storeDirectoryItem {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                & .storeDirectoryItems {
+                    margin: 0;
+                    padding: 0 1.5em;
+                    line-height: 2em;
+                    position: relative;
+                    list-style: none;
+                    text-decoration: none;
+                    &:last-child {
+                        position: relative;
+                        // line-height: 1em;
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 0;
+                            border-top: 1px solid #ddd;
+                            margin-top: -1px;
+                            position: absolute;
+                            top: 1.071em;
+                            left: 0;
+                            background: white;
+                            height: 100%;
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        padding: 0.4em 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: lighten($color: $black, $amount: 20);
+                        &:last-child {
+                            // padding-bottom: 0;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 10px;
+                        height: 0;
+                        border-top: 1px solid #ddd;
+                        margin-top: -1px;
+                        position: absolute;
+                        top: 1.071em;
+                        left: 0;
+                    }
+                    & .storeDirectorySubItem {
+                        margin: 0 0 0 0.5rem;
+                        padding: 0;
+                        position: relative;
+                        & .storeDirectorySubItems {
+                            margin: 0;
+                            padding: 0 1.5em;
+                            line-height: 2em;
+                            position: relative;
+                            list-style: none;
+                            text-decoration: none;
+                            &:last-child {
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    width: 10px;
+                                    height: 0;
+                                    border-top: 1px solid #ddd;
+                                    margin-top: -1px;
+                                    position: absolute;
+                                    top: 1.071em;
+                                    left: 0;
+                                    background: white;
+                                    height: 100%;
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                padding: 0.4em 0;
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: lighten($color: $black, $amount: 20);
+                                &:last-child {
+                                    // padding-bottom: 0;
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                display: block;
+                                width: 10px;
+                                height: 0;
+                                border-top: 1px solid #ddd;
+                                margin-top: -1px;
+                                position: absolute;
+                                top: 1.071em;
+                                left: 0;
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            // background-color: #ddd;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            // height: calc(100% - 1rem);
+                            border-left: 1px solid #ddd;
+                        }
+                    }
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    border-left: 1px solid #ddd;
+                }
+                
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -15,15 +149,222 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        .storeDirectoryHeading {
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .storeDirectoryHeading {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .storeDirectoryHeading {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .storeDirectoryHeading {
+            font-size: 24px;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .storeDirectoryHeading {
+            font-size: 20px;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {
