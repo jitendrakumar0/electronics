@@ -143,6 +143,9 @@
                             padding: 8px 0;
                             & .categoryLink {
                                 border-bottom: 1px solid $gray-300;
+                                &:last-child {
+                                    border: 0;
+                                }
                                 & .categoryAnchor {
                                     height: 37px;
                                     display: flex;

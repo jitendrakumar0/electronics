@@ -717,13 +717,13 @@
                 & .divider{
                     &::after{
                         content: "";
-                        height: 97%;
+                        height: 90%;
                         width: 1px;
-                        background-color: $gray-200;
+                        background-color: #e9ecef;
                         position: absolute;
-                        top: 0;
+                        top: 50%;
                         right: 50%;
-                        transform: translateX(-50%);
+                        transform: translate(-50%, -50%);
                         z-index: 5;
                     }
                     &::before{
@@ -1021,6 +1021,61 @@
                 }
             }
         }
+        // login page
+        .loginFluid{
+            & .loginContainer{
+                & .PageRow{
+                    & .divider{
+                        &::after{
+                        }
+                        &::before{
+                        }
+                        & .commomForm{
+                            & .loginPartMainHeading{
+                                &::before{
+                                }
+                            }
+                            & .loginPartSubHeading{
+                            }
+                            & .loginFromClass{
+                                & .loginLbl{
+                                }
+                                & .loginInp{
+                                    &:focus{
+                                    }
+                                }
+                            }
+                            & .loginFormCheck{
+                                & .loginFormChechInp{
+                                }
+                                & .loginFormCheckLbl{
+                                }
+                            }
+                            & .loginBtn{
+                                &:hover{
+                                }
+                            }
+                            & .loginAnchor{
+                            }
+                            & .registerBottomtxtContainer{
+                                & .registerBottomtxtContainerMainHeading{
+                                }
+                            }
+                            & .registerBottomtxtContainerUl{
+                                & .registerBottomtxtContainerLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            &.loginrytPadding{
+                            }
+                            &.registerleftPadding{
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -1176,6 +1231,63 @@
                 & .newsletterinp{
                 }
                 & .newsletterBtn{
+                }
+            }
+        }
+        // login page
+        .loginFluid{
+            & .loginContainer{
+                & .PageRow{
+                    & .divider{
+                        &::after{
+                        }
+                        &::before{
+                        }
+                        & .commomForm{
+                            & .loginPartMainHeading{
+                                &::before{
+                                }
+                            }
+                            & .loginPartSubHeading{
+                            }
+                            & .loginFromClass{
+                                & .loginLbl{
+                                }
+                                & .loginInp{
+                                    &:focus{
+                                    }
+                                }
+                            }
+                            & .loginFormCheck{
+                                & .loginFormChechInp{
+                                }
+                                & .loginFormCheckLbl{
+                                }
+                            }
+                            & .loginBtn{
+                                &:hover{
+                                }
+                            }
+                            & .loginAnchor{
+                            }
+                            & .registerBottomtxtContainer{
+                                & .registerBottomtxtContainerMainHeading{
+                                }
+                            }
+                            & .registerBottomtxtContainerUl{
+                                & .registerBottomtxtContainerLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            &.loginrytPadding{
+                                padding-right: 3.2rem;
+                            }
+                            &.registerleftPadding{
+                                padding-left: 3.2rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1429,6 +1541,75 @@
                 & .newsletterinp{
                 }
                 & .newsletterBtn{
+                }
+            }
+        }
+        // login page
+        .loginFluid{
+            & .loginContainer{
+                & .PageRow{
+                    padding: 2rem 0;
+                    & .divider{
+                        &::after{
+                        }
+                        &::before{
+                        }
+                        & .commomForm{
+                            & .loginPartMainHeading{
+                                margin-bottom: 0.75rem;
+                                &::before{
+                                }
+                            }
+                            & .loginPartSubHeading{
+                                margin-bottom: 1rem;
+                            }
+                            & .loginFromClass{
+                                & .loginLbl{
+                                    font-size: 0.95rem;
+                                }
+                                & .loginInp{
+                                    font-size: 0.95rem;
+                                    &:focus{
+                                    }
+                                }
+                            }
+                            & .loginFormCheck{
+                                & .loginFormChechInp{
+                                }
+                                & .loginFormCheckLbl{
+                                    font-size: 0.95rem;
+                                }
+                            }
+                            & .loginBtn{
+                                margin-top: 0.3rem;
+                                &:hover{
+                                }
+                            }
+                            & .loginAnchor{
+                                font-size: 14px;
+                            }
+                            & .registerBottomtxtContainer{
+                                & .registerBottomtxtContainerMainHeading{
+                                    font-size: 1.2rem;
+                                    margin: 1.2rem 0;
+                                }
+                            }
+                            & .registerBottomtxtContainerUl{
+                                & .registerBottomtxtContainerLi{
+                                    font-size: 14px;
+                                    & img{
+                                        height: 13px;
+                                    }
+                                }
+                            }
+                            &.loginrytPadding{
+                                padding-right: 2.2rem;
+                            }
+                            &.registerleftPadding{
+                                padding-left: 2.2rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1913,6 +2094,7 @@
             }
             & .productDetailBox{
                 & .productNameAnchor{
+                    font-size: 0.9rem;
                     & .productName{
                     }
                 }
@@ -2026,11 +2208,14 @@
                                 }
                             }
                             & .loginPartSubHeading{
+                                margin-bottom: 0.6rem;
                             }
                             & .loginFromClass{
                                 & .loginLbl{
+                                    font-size: 0.9rem;
                                 }
                                 & .loginInp{
+                                    font-size: 0.9rem;
                                     &:focus{
                                     }
                                 }
@@ -2039,6 +2224,7 @@
                                 & .loginFormChechInp{
                                 }
                                 & .loginFormCheckLbl{
+                                    font-size: 0.9rem;
                                 }
                             }
                             & .loginBtn{
