@@ -458,6 +458,42 @@
                 }
             }
         }
+        .categoryListHeading {
+            font-size: 1.571em;
+            font-weight: 400;
+            color: $theme2;
+            & .headOuter {
+                border-bottom: 1px solid $gray-300;
+            }
+            & .head {
+                border-bottom: 2px solid $theme1;
+                width: fit-content;
+            }
+        }
+        .productCategoryCard {
+            background-color: $white;
+            padding: 1.429em 1.714em 1em;
+            height: 100%;
+            border: 1px solid #f4f4f4;
+            transition: 0.3s ease-in-out;
+            & .categoryImage {
+                height: 160px;
+                & img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            & .categoryName {
+                font-size: 1em;
+                line-height: 1.28572em;
+                color: $theme2;
+                font-weight: 500;
+            }
+            &:hover {
+                // transform: translateY(-10px);
+                box-shadow: 1px 1px 9px 0px $gray-200;
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -612,6 +648,16 @@
                 }
                 & .shippingText {
                 }
+            }
+        }
+        .productCategoryCard {
+            & .categoryImage {
+                & img {
+                }
+            }
+            & .categoryName {
+            }
+            &:hover {
             }
         }
     }
@@ -773,6 +819,16 @@
                 }
             }
         }
+        .productCategoryCard {
+            & .categoryImage {
+                & img {
+                }
+            }
+            & .categoryName {
+            }
+            &:hover {
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -916,6 +972,16 @@
                 }
                 & .shippingText {
                 }
+            }
+        }
+        .productCategoryCard {
+            & .categoryImage {
+                & img {
+                }
+            }
+            & .categoryName {
+            }
+            &:hover {
             }
         }
     }
@@ -1062,6 +1128,20 @@
                 }
                 & .shippingText {
                 }
+            }
+        }
+        .productCategoryCard {
+            padding: 1rem;
+            & .categoryImage {
+                height: unset;
+                & img {
+                    aspect-ratio: 16/14;
+                }
+            }
+            & .categoryName {
+                font-size: 0.85rem;
+            }
+            &:hover {
             }
         }
     }
@@ -1219,6 +1299,16 @@
                 }
                 & .shippingText {
                 }
+            }
+        }
+        .productCategoryCard {
+            & .categoryImage {
+                & img {
+                }
+            }
+            & .categoryName {
+            }
+            &:hover {
             }
         }
     }
