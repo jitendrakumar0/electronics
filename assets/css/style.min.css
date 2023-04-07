@@ -1219,8 +1219,12 @@ body .overflow-auto-hidden {
   color: #000;
 }
 .footerFluid .footerContainer .footerPadding .footerUl .footerLi {
-  font-size: 1em;
+  font-size: 0.95em;
   margin-top: 0.4em;
+  transition: 0.3s linear;
+}
+.footerFluid .footerContainer .footerPadding .footerUl .footerLi:hover {
+  transform: translateX(10px);
 }
 .footerFluid .footerContainer .footerPadding .footerUl .footerLi .footerliAnchor {
   color: #4d4d4d;
@@ -1262,6 +1266,7 @@ body .overflow-auto-hidden {
   padding: 0.734em 2em;
   height: 41px;
   font-size: 16px;
+  border: none;
 }
 .newsletterFluid .newsletterContainer .newsletterBtn {
   background-color: #000;
@@ -1274,6 +1279,7 @@ body .overflow-auto-hidden {
   height: 41px;
   width: 91px;
   font-size: 16px;
+  padding-bottom: 4px;
 }
 
 @media (max-width: 991.98px) {
@@ -1297,7 +1303,7 @@ body .overflow-auto-hidden {
     margin-bottom: 2em;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
-    font-size: 12px;
+    font-size: 14px;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
     font-size: 14px;
@@ -1341,7 +1347,7 @@ body .overflow-auto-hidden {
     margin-bottom: 2em;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
-    font-size: 12px;
+    font-size: 14px;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
     font-size: 14px;
@@ -1390,7 +1396,7 @@ body .overflow-auto-hidden {
     margin-bottom: 2em;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
-    font-size: 12px;
+    font-size: 14px;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
     font-size: 14px;
