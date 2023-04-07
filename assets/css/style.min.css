@@ -1282,6 +1282,134 @@ body .overflow-auto-hidden {
   border: none;
 }
 
+.loginFluid .loginContainer .PageRow {
+  padding: 2.5em 2.143em;
+  position: relative;
+}
+.loginFluid .loginContainer .PageRow .divider::after {
+  content: "";
+  height: 97%;
+  width: 1px;
+  background-color: #e9ecef;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.loginFluid .loginContainer .PageRow .divider::before {
+  content: "or";
+  border-radius: 50%;
+  border: 1px solid #e9ecef;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginPartMainHeading {
+  font-size: 1.786em;
+  line-height: 1.6em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 1.36em;
+  color: #595959;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginPartMainHeading::before {
+  content: "";
+  width: 110px;
+  height: 2px;
+  background-color: #fed700;
+  position: absolute;
+  top: 56px;
+  left: 12px;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginPartSubHeading {
+  margin-bottom: 2.143em;
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 2.143em;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginFromClass .loginLbl {
+  font-size: 1em;
+  line-height: 1.286em;
+  font-weight: 700;
+  margin-bottom: 0.857em;
+  color: #000;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginFromClass .loginInp {
+  width: 100%;
+  padding: 0.594rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.714;
+  color: #333e48;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 1.375rem;
+  box-shadow: none;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginFromClass .loginInp:focus {
+  border: 1px solid #fed700;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginFormCheck .loginFormChechInp {
+  box-shadow: none;
+  border-color: #adb5bd;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginFormCheck .loginFormCheckLbl {
+  font-size: 1em;
+  line-height: 1.286em;
+  font-weight: 700;
+  color: #595959;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginBtn {
+  color: #595959;
+  background-color: #e6e6e6;
+  padding: 0.594rem 2rem;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 1.375rem;
+  border: none;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .loginAnchor {
+  color: #4d4d4d;
+  font-size: 15px;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .registerBottomtxtContainer .registerBottomtxtContainerMainHeading {
+  font-size: 1.286em;
+  line-height: 1em;
+  margin-bottom: 1.444em;
+  color: #595959;
+  margin-top: 3.571em;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .registerBottomtxtContainerUl .registerBottomtxtContainerLi {
+  font-size: 16px;
+  color: #4d4d4d;
+  margin-bottom: 8px;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm .registerBottomtxtContainerUl .registerBottomtxtContainerLi img {
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm.loginrytPadding {
+  padding-right: 6.071em;
+}
+.loginFluid .loginContainer .PageRow .divider .commomForm.registerleftPadding {
+  padding-left: 6.071em;
+}
+
 @media (max-width: 991.98px) {
   .last {
     margin-bottom: 20px;
@@ -1365,6 +1493,24 @@ body .overflow-auto-hidden {
     margin-bottom: 15px;
     margin-top: 15px;
   }
+  .loginFluid .loginContainer .PageRow .divider::after {
+    display: none;
+  }
+  .loginFluid .loginContainer .PageRow .divider::before {
+    display: none;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm .loginBtn {
+    border: none;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm .registerBottomtxtContainer .registerBottomtxtContainerMainHeading {
+    margin-top: 1.571em;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm.loginrytPadding {
+    padding-right: 0;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm.registerleftPadding {
+    padding-left: 0;
+  }
 }
 @media (max-width: 575.98px) {
   .productListingFluid .productListingContainer .filterOffcanvas {
@@ -1413,6 +1559,24 @@ body .overflow-auto-hidden {
     color: #000;
     margin-bottom: 0;
     margin-top: 15px;
+  }
+  .loginFluid .loginContainer .PageRow .divider::after {
+    display: none;
+  }
+  .loginFluid .loginContainer .PageRow .divider::before {
+    display: none;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm .loginBtn {
+    border: none;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm .registerBottomtxtContainer .registerBottomtxtContainerMainHeading {
+    margin-top: 1.571em;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm.loginrytPadding {
+    padding-right: 0;
+  }
+  .loginFluid .loginContainer .PageRow .divider .commomForm.registerleftPadding {
+    padding-left: 0;
   }
 }
 .heroSection {

@@ -707,6 +707,152 @@
             }
         }
     }
+
+    // login page
+    .loginFluid{
+        & .loginContainer{
+            & .PageRow{
+                padding: 2.5em 2.143em;
+                position: relative;
+                & .divider{
+                    &::after{
+                        content: "";
+                        height: 97%;
+                        width: 1px;
+                        background-color: $gray-200;
+                        position: absolute;
+                        top: 0;
+                        right: 50%;
+                        transform: translateX(-50%);
+                        z-index: 5;
+                    }
+                    &::before{
+                        content: 'or';
+                        border-radius: 50%;
+                        border: 1px solid $gray-200;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 10;
+                        background-color: $white;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    & .commomForm{
+                        & .loginPartMainHeading{
+                            font-size: 1.786em;
+                            line-height: 1.6em;
+                            padding-bottom: 0.4em;
+                            border-bottom: 1px solid $gray-400;
+                            margin-bottom: 1.36em;
+                            color: lighten($color: $black, $amount: 35);
+                            &::before{
+                                content: "";
+                                width: 110px;
+                                height: 2px;
+                                background-color: #fed700;
+                                position: absolute;
+                                top: 56px;
+                                left: 12px;
+                            }
+                        }
+                        & .loginPartSubHeading{
+                            margin-bottom: 2.143em;
+                            font-size: 14px;
+                            color: lighten($color: $black, $amount: 35);
+                            margin-bottom: 2.143em;
+                        }
+                        & .loginFromClass{
+                            & .loginLbl{
+                                font-size: 1em;
+                                line-height: 1.286em;
+                                font-weight: 700;
+                                margin-bottom: 0.857em;
+                                color: $black;
+                            }
+                            & .loginInp{
+                                width: 100%;
+                                padding: 0.594rem 1rem;
+                                font-size: .875rem;
+                                font-weight: 400;
+                                line-height: 1.714;
+                                color: #333e48;
+                                background-clip: padding-box;
+                                border: 1px solid $gray-400;
+                                appearance: none;
+                                border-radius: 1.375rem;
+                                box-shadow: none;
+                                &:focus{
+                                border: 1px solid $theme1;
+                                }
+                            }
+                        }
+                        & .loginFormCheck{
+                            & .loginFormChechInp{
+                                box-shadow: none;
+                                border-color: $gray-500;
+                            }
+                            & .loginFormCheckLbl{
+                                font-size: 1em;
+                                line-height: 1.286em;
+                                font-weight: 700;
+                                color: lighten($color: $black, $amount: 35);
+                            }
+                        }
+                        & .loginBtn{
+                            color: lighten($color: $black, $amount: 35);
+                            background-color: lighten($color: $black, $amount: 90);
+                            padding: .594rem 2rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            border-radius: 1.375rem;
+                            border: none;
+                            &:hover{
+                                background-color: $black;
+                                color: $white;
+                            }
+                        }
+                        & .loginAnchor{
+                            color: lighten($color: $black, $amount: 30);
+                            font-size: 15px;
+                        }
+                        & .registerBottomtxtContainer{
+                            & .registerBottomtxtContainerMainHeading{
+                                font-size: 1.286em;
+                                line-height: 1em;
+                                margin-bottom: 1.444em;
+                                color: lighten($color: $black, $amount: 35);
+                                margin-top: 3.571em;
+                            }
+                        }
+                        & .registerBottomtxtContainerUl{
+                            & .registerBottomtxtContainerLi{
+                                font-size: 16px;
+                                color: lighten($color: $black, $amount: 30);
+                                margin-bottom: 8px;
+                                & img{
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                        &.loginrytPadding{
+                            padding-right:6.071em;
+                        }
+                        &.registerleftPadding{
+                            padding-left:6.071em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
 
@@ -1541,6 +1687,66 @@
                 }
             }
         }
+        .loginFluid{
+            & .loginContainer{
+                & .PageRow{
+                    & .divider{
+                        &::after{
+                            display: none;
+                        }
+                        &::before{
+                            display: none;
+                        }
+                        & .commomForm{
+                            & .loginPartMainHeading{
+                                &::before{
+                                }
+                            }
+                            & .loginPartSubHeading{
+                            }
+                            & .loginFromClass{
+                                & .loginLbl{
+                                }
+                                & .loginInp{
+                                    &:focus{
+                                    }
+                                }
+                            }
+                            & .loginFormCheck{
+                                & .loginFormChechInp{
+                                }
+                                & .loginFormCheckLbl{
+                                }
+                            }
+                            & .loginBtn{
+                                border: none;
+                                &:hover{
+                                }
+                            }
+                            & .loginAnchor{
+                            }
+                            & .registerBottomtxtContainer{
+                                & .registerBottomtxtContainerMainHeading{
+                                    margin-top: 1.571em;
+                                }
+                            }
+                            & .registerBottomtxtContainerUl{
+                                & .registerBottomtxtContainerLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            &.loginrytPadding{
+                                padding-right:0;
+                            }
+                            &.registerleftPadding{
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
@@ -1801,6 +2007,66 @@
                 & .newsletterinp{
                 }
                 & .newsletterBtn{
+                }
+            }
+        }
+        .loginFluid{
+            & .loginContainer{
+                & .PageRow{
+                    & .divider{
+                        &::after{
+                            display: none;
+                        }
+                        &::before{
+                            display: none;
+                        }
+                        & .commomForm{
+                            & .loginPartMainHeading{
+                                &::before{
+                                }
+                            }
+                            & .loginPartSubHeading{
+                            }
+                            & .loginFromClass{
+                                & .loginLbl{
+                                }
+                                & .loginInp{
+                                    &:focus{
+                                    }
+                                }
+                            }
+                            & .loginFormCheck{
+                                & .loginFormChechInp{
+                                }
+                                & .loginFormCheckLbl{
+                                }
+                            }
+                            & .loginBtn{
+                                border: none;
+                                &:hover{
+                                }
+                            }
+                            & .loginAnchor{
+                            }
+                            & .registerBottomtxtContainer{
+                                & .registerBottomtxtContainerMainHeading{
+                                    margin-top: 1.571em;
+                                }
+                            }
+                            & .registerBottomtxtContainerUl{
+                                & .registerBottomtxtContainerLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            &.loginrytPadding{
+                                padding-right:0;
+                            }
+                            &.registerleftPadding{
+                                padding-left: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
