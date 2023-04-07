@@ -1266,7 +1266,6 @@ body .overflow-auto-hidden {
   padding: 0.734em 2em;
   height: 41px;
   font-size: 16px;
-  border: none;
 }
 .newsletterFluid .newsletterContainer .newsletterBtn {
   background-color: #000;
@@ -1280,6 +1279,7 @@ body .overflow-auto-hidden {
   width: 91px;
   font-size: 16px;
   padding-bottom: 4px;
+  border: none;
 }
 
 @media (max-width: 991.98px) {
@@ -1306,13 +1306,14 @@ body .overflow-auto-hidden {
     font-size: 14px;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
-    font-size: 14px;
+    font-size: 20px;
   }
   .footerFluid .footerContainer .footerPadding .contactInfo {
     color: #000;
+    font-size: 18px;
   }
   .footerFluid .footerContainer .footerPadding .contactDetail {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footerFluid .footerContainer .footerPadding .FooterSecondHeading {
     color: #000;
@@ -1354,6 +1355,7 @@ body .overflow-auto-hidden {
   }
   .footerFluid .footerContainer .footerPadding .contactInfo {
     color: #000;
+    font-size: 16px;
   }
   .footerFluid .footerContainer .footerPadding .contactDetail {
     font-size: 14px;
@@ -1399,7 +1401,7 @@ body .overflow-auto-hidden {
     font-size: 14px;
   }
   .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
-    font-size: 14px;
+    font-size: 18px;
   }
   .footerFluid .footerContainer .footerPadding .contactInfo {
     color: #000;
@@ -1409,7 +1411,7 @@ body .overflow-auto-hidden {
   }
   .footerFluid .footerContainer .footerPadding .FooterSecondHeading {
     color: #000;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     margin-top: 15px;
   }
 }

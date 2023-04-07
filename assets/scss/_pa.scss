@@ -690,7 +690,6 @@
                 padding: .734em 2em;
                 height: 41px;
                 font-size: 16px;
-                border: none;
             }
             & .newsletterBtn{
                 background-color: $black;
@@ -704,6 +703,7 @@
                 width: 91px;
                 font-size: 16px;
                 padding-bottom: 4px;
+                border: none;
             }
         }
     }
@@ -1241,15 +1241,16 @@
                                 font-size: 14px;
                             }
                             & span:last-child{
-                                font-size: 14px;
+                                font-size: 20px;
                             }
                         }
                     }
                     & .contactInfo{
                         color: $black;
+                        font-size: 18px;
                     }
                     & .contactDetail{ 
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                     & .socialLinksBox{
                         & .socialImg{
@@ -1501,6 +1502,7 @@
                     }
                     & .contactInfo{
                         color: $black;
+                        font-size: 16px;
                     }
                     & .contactDetail{ 
                         font-size: 14px;
@@ -1758,7 +1760,7 @@
                                 font-size: 14px;
                             }
                             & span:last-child{
-                                font-size: 14px;
+                                font-size: 18px;
                             }
                         }
                     }
@@ -1776,7 +1778,7 @@
                     }
                     & .FooterSecondHeading{
                         color: $black;
-                        margin-bottom: 15px;
+                        margin-bottom: 0;
                         margin-top: 15px;
                     }
                     & .footerUl{
