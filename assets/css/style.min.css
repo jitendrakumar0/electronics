@@ -1074,131 +1074,6 @@ body .overflow-auto-hidden {
 .productListingFluid .productListingContainer .productListingRytPartTopBarFilter .filtersContainer span {
   font-size: 0.875rem;
 }
-.productListingFluid .productListingContainer .productCard {
-  background-color: #fff;
-  padding: 1.429em 1.714em 1em;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.productListingFluid .productListingContainer .productCard.productBorderCard {
-  border: 1px solid #f4f4f4;
-}
-.productListingFluid .productListingContainer .productCard.productRightBorderCard::after {
-  position: absolute;
-  content: "";
-  height: 80%;
-  width: 1px;
-  background-color: #f4f4f4;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.productListingFluid .productListingContainer .productCard .productCategory {
-  font-size: 0.857em;
-  line-height: 1.05em;
-  color: #6c757d;
-  margin-bottom: 8px;
-  position: relative;
-  z-index: 2;
-}
-.productListingFluid .productListingContainer .productCard .productName {
-  font-size: 1em;
-  line-height: 1.28572em;
-  color: #0062bd;
-  font-weight: 700;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.productListingFluid .productListingContainer .productCard .productImage {
-  height: 200px;
-  margin: 15px 0;
-}
-.productListingFluid .productListingContainer .productCard .productImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.productListingFluid .productListingContainer .productCard .productOldPrice {
-  font-size: 0.7em;
-  line-height: 1.5em;
-  color: #495057;
-  text-decoration: line-through;
-}
-.productListingFluid .productListingContainer .productCard .productPrice {
-  font-size: 1.429em;
-  font-weight: 400;
-  color: #495057;
-  line-height: 1em;
-}
-.productListingFluid .productListingContainer .productCard .iconBox {
-  height: 35px;
-  width: 35px;
-  background-color: #dee2e6;
-  transition: 0.3s ease-in-out;
-  position: relative;
-  z-index: 5;
-}
-.productListingFluid .productListingContainer .productCard .iconBox img {
-  height: 18px;
-}
-.productListingFluid .productListingContainer .productCard .priceHover {
-  transition: 0.3s ease-in-out;
-  background-color: white;
-  position: relative;
-  z-index: 2;
-}
-.productListingFluid .productListingContainer .productCard .hoverBtns {
-  position: absolute;
-  z-index: 2;
-  background-color: white;
-  bottom: 0;
-  left: 0;
-  transform: translateY(40px);
-  transition: 0.3s ease-in-out;
-}
-.productListingFluid .productListingContainer .productCard .hoverBtns .hiddenBtn {
-  font-size: 0.857em;
-  line-height: 1.05em;
-  color: #6c757d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 40px;
-}
-.productListingFluid .productListingContainer .productCard .hoverBtns .hiddenBtn img {
-  height: 15px;
-  margin-right: 5px;
-}
-.productListingFluid .productListingContainer .productCard .hoverBtns .hiddenBtn:hover {
-  opacity: 0.8;
-}
-.productListingFluid .productListingContainer .productCard .hoverBtns::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 82%;
-  height: 1px;
-  background-color: #fff;
-}
-.productListingFluid .productListingContainer .productCard:hover .iconBox {
-  background-color: #fed700;
-}
-.productListingFluid .productListingContainer .productCard:hover .hoverBtns {
-  transform: translateY(0);
-}
-.productListingFluid .productListingContainer .productCard:hover .hoverBtns::before {
-  background-color: #f4f4f4;
-}
-.productListingFluid .productListingContainer .productCard:hover .priceHover {
-  transform: translateY(-40px);
-}
 
 .featuredSectionBox .featuredSectionBoxMainHeading {
   font-size: 1.429em;
@@ -1331,16 +1206,17 @@ body .overflow-auto-hidden {
 }
 .footerFluid .footerContainer .footerPadding .socialLinksBox .socialImg {
   height: 20px;
-  filter: brightness(0.1);
+  filter: grayscale(1);
 }
 .footerFluid .footerContainer .footerPadding .socialLinksBox .socialImg:hover {
-  filter: brightness(1);
+  filter: grayscale(0);
 }
 .footerFluid .footerContainer .footerPadding .FooterSecondHeading {
   font-size: 1.143em;
   line-height: 1.125em;
   margin-bottom: 1.6em;
   font-weight: 700;
+  color: #000;
 }
 .footerFluid .footerContainer .footerPadding .footerUl .footerLi {
   font-size: 1em;
@@ -1350,12 +1226,98 @@ body .overflow-auto-hidden {
   color: #4d4d4d;
 }
 
+.footerBottomBarFluid {
+  background-color: #ebebeb;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar {
+  width: 100%;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding {
+  padding: 0.1em 0;
+}
+.footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .copyrytTxt {
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  .last {
+    margin-bottom: 20px;
+  }
+  .footerFluid .footerContainer .footerPadding {
+    padding: 2.28em 0 1.44em;
+  }
+  .footerFluid .footerContainer .footerPadding .footerLogo {
+    width: 100px;
+    height: 30px;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox {
+    margin-bottom: 0;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphone {
+    margin-bottom: 2em;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox {
+    margin-bottom: 2em;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
+    font-size: 12px;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
+    font-size: 14px;
+  }
+  .footerFluid .footerContainer .footerPadding .contactInfo {
+    color: #000;
+  }
+  .footerFluid .footerContainer .footerPadding .contactDetail {
+    font-size: 14px;
+  }
+  .footerFluid .footerContainer .footerPadding .FooterSecondHeading {
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
 @media (max-width: 767.98px) {
   .productListingFluid .productListingContainer .productListingRytPartTopBar .productListingRytPartTopBarMainHeading {
     font-size: 18px;
   }
   .productListingFluid .productListingContainer .productListingRytPartTopBar .productListingRytPartTopBarMainSubHeading {
     font-size: 15px;
+  }
+  .last {
+    margin-bottom: 20px;
+  }
+  .footerFluid .footerContainer .footerPadding {
+    padding: 2.28em 0 1.44em;
+  }
+  .footerFluid .footerContainer .footerPadding .footerLogo {
+    width: 100px;
+    height: 30px;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox {
+    margin-bottom: 0;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphone {
+    margin-bottom: 2em;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox {
+    margin-bottom: 2em;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
+    font-size: 12px;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
+    font-size: 14px;
+  }
+  .footerFluid .footerContainer .footerPadding .contactInfo {
+    color: #000;
+  }
+  .footerFluid .footerContainer .footerPadding .contactDetail {
+    font-size: 14px;
+  }
+  .footerFluid .footerContainer .footerPadding .FooterSecondHeading {
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 575.98px) {
@@ -1369,6 +1331,42 @@ body .overflow-auto-hidden {
   .productListingFluid .productListingContainer .productListingRytPartTopBar .productListingRytPartTopBarMainSubHeading {
     font-size: 12px;
     line-height: 22px;
+  }
+  .last {
+    margin-bottom: 20px;
+  }
+  .footerFluid .footerContainer .footerPadding {
+    padding: 2.28em 0 1.44em;
+  }
+  .footerFluid .footerContainer .footerPadding .footerLogo {
+    width: 100px;
+    height: 30px;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox {
+    margin-bottom: 0;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphone {
+    margin-bottom: 2em;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox {
+    margin-bottom: 2em;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:first-child {
+    font-size: 12px;
+  }
+  .footerFluid .footerContainer .footerPadding .HeadphoneBox .headphoneTxtBox span:last-child {
+    font-size: 14px;
+  }
+  .footerFluid .footerContainer .footerPadding .contactInfo {
+    color: #000;
+  }
+  .footerFluid .footerContainer .footerPadding .contactDetail {
+    font-size: 14px;
+  }
+  .footerFluid .footerContainer .footerPadding .FooterSecondHeading {
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 }
 .heroSection {
