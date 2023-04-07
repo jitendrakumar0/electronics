@@ -63,7 +63,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>Home Page | websiteNameWillBeHere Website</title>
+        <title>PRODUCT LISTING PAGE | websiteNameWillBeHere Website</title>
         <!-- Required meta tags -->
         <meta name="title" content="Home Page | websiteNameWillBeHere Website" />
         <meta name="description" content="This websiteNameWillBeHere website" />
@@ -99,14 +99,13 @@
         <!-- style -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
 
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
-        <main class="container-fluid">
-            <div class="row mainInner">
-                <div class="col-12 px-0 flex-fill" data-page-name="landing">
+        <main class="container-fluid ">
+            <div class="row mainInner ">
+                <div class="col-12 px-0 flex-fill" data-page-name="">
                     <nav class="topNavbar">
                         <div class="container-fluid topBar d-none d-xl-block">
                             <div class="container h-100">
@@ -843,172 +842,552 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="container-fluid heroSection">
-                        <div class="container">
+                    <!-- breadcrumb -->
+                    <div class="container-fluid breadcrumbFluid d-lg-block d-none">
+                        <div class="container breadcrumbContainer">
                             <div class="row">
-                                <div class="col-3 d-none d-lg-block"></div>
-                                <div class="col-xl-9 col-12 sliderSection">
-                                    <!-- Set up your HTML -->
-                                    <div class="owl-carousel hero-carousel row mx-0">
-                                        <div class="col-12 p-0">
-                                            <div class="row align-items-center mx-0 position-relative">
-                                                <div class="col-6 leftPart">
-                                                    <div class="row">
-                                                        <div class="col-12 nanoHeading">Shop to get what you love</div>
-                                                        <div class="col-12 slideHeading mb-1">
-                                                            THE NEW STATNDARD
+                                <div class="col-12">
+                                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                                    <ol class="breadcrumb productListingBreadcrumb">
+                                        <li class="breadcrumb-item productListingItem"><a  class="productBreadcrumbAnchor" href="#">Home</a></li>
+                                        <li class="breadcrumb-item productListingItem active" aria-current="page"><a class="productBreadcrumbAnchor"  href="#">Store Directory</a></li>
+                                    </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filter bar -->
+                    <div class="container-fluid storeDirectory position-relative pb-4">
+                        <div class="container storeDirectoryContainer">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="storeDirectoryHeading">
+                                        Store Directory
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="storeDirectoryListing">
+                                        <hr>
+                                        <div class="row gy-3">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                                <ul class="storeDirectoryItem">
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Car Electronic & GPS</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Computer Components</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Computer Cases</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Desktops</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Monitors</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Software</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Home Theatre</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Laptops & Computers</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Accessories</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">All in One</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Computer Accessories</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Computer Monitors</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Computers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Desktop Computers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Desktop PCs & Laptops</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Desktop PCs & Laptops</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Gaming</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Laptops</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Mac Computers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Networking</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Notebooks</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Peripherals</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Refurbished Laptops</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Servers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Ultrabooks</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Uncategorized</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Video Games & Consoles</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Accessories</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Action Games</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Game Consoles</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Racing Games</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Station Consoles</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Video Games & Consoles</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Xbox</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                                <ul class="storeDirectoryItem">
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">12.3 inch</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Cameras & Photography</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Cameras</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Photo Cameras</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Photo Cameras</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Video Cameras</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Ending Offers</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Home Entertainment</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Blue-ray Players</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">DVD Players</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Home & Audio Enternteinment</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Home & Audio Enternteinment</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Home Theatres</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Projectors</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Speakers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">TVs</a>
+                                                                <ul class="storeDirectorySubItem">
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">3D Tvs</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">4k Ultra HD TVs</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Curved TVs</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">LED TVs</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">OLED TVs</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Smart TVs</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Office Supplies</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">TV & Audio</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Audio</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Audio Speakers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Portable Audio</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                                <ul class="storeDirectoryItem">
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">15 inch</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Bluetooth Speakers</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Gadgets</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Gadgets & Accesories</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Smartwatches</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Wearables</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Headphones</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Printers & Ink</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Printers</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Stereo</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                                <ul class="storeDirectoryItem">
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">17 inch</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Accessories</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Cases</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Chargers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Headphone Accessories</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Headphone Cases</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Headphone</a>
+                                                                <ul class="storeDirectorySubItem">
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Earbuds and In-ear</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Kids' Headphones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Over-Ear and On-Ear</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">PC Gaming Headsets</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Pro & DJ Headphones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Refurbished Headphones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Refurbished Headphones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Waterproof Headphones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Wireless and Bluetooth</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Pendrives</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Power Banks</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Gadgets & Accesories</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">GPS & Navi</a>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Smart Phones & Tablets</a>
+                                                        <ul class="storeDirectorySubItem">
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Accessories</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Chargers</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Powerbankst</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Smartphones</a>
+                                                                <ul class="storeDirectorySubItem">
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">4G LTE Smartphone</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Cables</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Chargers</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Covers</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Featured Phones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Holders</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Mobile Phones</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Mobiles Accesories</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Powerbanks</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Unlocked Phone</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Smartphones & Tablets</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Smartphones & Tablets</a>
+                                                            </li>
+                                                            <li class="storeDirectorySubItems">
+                                                                <a href="#" class="storeDirectorySubItemsLink">Tablets</a>
+                                                                <ul class="storeDirectorySubItem">
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Featured Tablets</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Tablet Accesories</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Tablet Accessories</a>
+                                                                    </li>
+                                                                    <li class="storeDirectorySubItems">
+                                                                        <a href="#" class="storeDirectorySubItemsLink">Tablet PCs</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="storeDirectoryItems">
+                                                        <a href="#" class="storeDirectoryItemsLink">Speakers</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- newsletter -->
+                    <div class="container-fluid newsletterFluid">
+                        <div class="container newsletterContainer">
+                            <div class="row align-items-center">
+                                <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-xl-5 col-12 d-flex w-lg-100 d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-md-0">
+                                            <div class="newsletterTxt1">
+                                                <img src="assets/img/svg/telegram.svg" alt="" srcset="">
+                                                Sign up to Newsletter
+                                            </div>
+                                        </div>
+                                        <div class="col-7 d-xl-block d-none">
+                                            <div class="newsletterTxt2">...and receive<strong class="ms-2">₹20 coupon for first shopping</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <form class="position-relative">
+                                        <input type="text" class="newsletterinp form-control" name="" id="" placeholder="Enter your email address">
+                                        <button class="newsletterBtn">Signup</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer -->
+                    <footer>
+                        <div class="container-fluid footerFluid">
+                            <div class="container footerContainer">
+                                <div class="footerPadding">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="footerLogo">
+                                                        <img src="assets/img/logo/avoneLogo.svg" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row HeadphoneBox align-items-center">
+                                                        <div class="col-auto">
+                                                            <div class="headphone">
+                                                                <img src="assets/img/svg/headphones.svg" alt="">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-12 subHeading mb-3">UNDER FAVORABLE SMARTWATCHES</div>
-                                                        <div class="col-12 productPrize mb-sm-4 mb-2">
-                                                            <sup>$</sup>749<sup>99</sup>
-                                                        </div>
-                                                        <div class="col-12 statBuyingSlidBtnOuter">
-                                                            <a href="javascript:;" class="statBuyingSlidBtn stretched-link">Start Buying</a>
+                                                        <div class="col">
+                                                            <div class="headphoneTxtBox">
+                                                                <span>Got Questions ? Call us 24/7!</span>
+                                                                <span>(800) 8001-8588, (0600) 874 548</s>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 rightPart">
-                                                    <div class="imgOuter">
-                                                        <img src="assets/img/slideImg/smartwatches-resized.png" class="w-100 h-100" alt="">
+                                                <div class="col-12">
+                                                    <div class="contactInfo"> <strong> Contact info</strong></div>
+                                                    <div class="contactDetail">17 Princess Road, London, Greater London NW1 8JR, UK</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="socialLinksBox">
+                                                        <ul class="list-unstyled d-flex">
+                                                            <lg-l col-autoi class="me-4"><a href="javascript:;"><img class="socialImg" src="assets/img/svg/facebookblue.svg" alt=""></a></lg-l>
+                                                            <li class="me-4"><a href="javascript:;"><img class="socialImg" src="assets/img/svg/whatsappcolor.svg" alt=""></a></li>
+                                                            <li class="me-4"><a href="javascript:;"><img class="socialImg" src="assets/img/svg/pincolor.svg" alt=""></a></li>
+                                                            <li class="me-4"><a href="javascript:;"><img class="socialImg" src="assets/img/svg/linkedincolor.svg" alt=""></a></li>
+                                                            <li class="me-4"><a href="javascript:;"><img class="socialImg" src="assets/img/svg/instagramcolor.svg" alt=""></a></li>
+                                                            <li class="me-4"><a href="javascript;;"><img class="socialImg" src="assets/img/svg/wifi.svg" alt=""></a></li>
+                                                            <li class="me-4"><a href="javascript;;"><img class="socialImg" src="assets/img/svg/youtubered.svg" alt=""></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 p-0">
-                                            <div class="row align-items-center mx-0">
-                                                <div class="col-6 leftPart">
-                                                    <div class="row">
-                                                        <div class="col-12 nanoHeading">Shop to get what you love</div>
-                                                        <div class="col-12 slideHeading">
-                                                            TIMEPIECES THAT 
-                                                            MAKE A STATEMENT
-                                                            UP TO 
-                                                            <b>40% OFF</b>
-                                                        </div>
-                                                        <div class="col-12 statBuyingSlidBtnOuter">
-                                                            <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
-                                                        </div>
-                                                    </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-5 col-md-4 col-sm-6 ">
+                                                    <div class="FooterSecondHeading">Find It Fast</div>
+                                                    <ul class="footerUl list-unstyled">
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">Laptops & Computers</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">Cameras & Photography</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">Smarty Phones & Tablets</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">Vedio Games & Consoles</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">TV & Audio</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">Gadgets</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor text-nowrap">Waterproof Headphones</a></li>
+                                                    </ul>
                                                 </div>
-                                                <div class="col-6 rightPart">
-                                                    <div class="imgOuter">
-                                                        <img src="assets/img/slideImg/Smartphones.png" class="w-100 h-100" alt="">
-                                                    </div>
+                                                <div class="col-lg-3 col-md-4 col-sm-6  flex-column d-flex align-items-start justify-content-start mt-3 d-md-block d-none">
+                                                    <div class="FooterSecondHeading "> </div>
+                                                    <ul class="footerUl list-unstyled">
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">About</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Contact</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Wishlist</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Compare</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">FAQ</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Store Directory</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12  justify-content-start">
+                                                    <div class="FooterSecondHeading">Customer Care</div>
+                                                    <ul class="footerUl list-unstyled">
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">My order</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Track Your Order</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor"></a>Customer Service</li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Return/Exchange</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">FAQs</a></li>
+                                                        <li class="footerLi"><a href="javascript:;" class="footerliAnchor">Product Support</a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 p-0"> 
-                                            <div class="row align-items-center mx-0">
-                                                <div class="col-6 leftPart">
-                                                    <div class="row">
-                                                        <div class="col-12 nanoHeading">Shop to get what you love</div>
-                                                        <div class="col-12 slideHeading">
-                                                            TIMEPIECES THAT 
-                                                            MAKE A STATEMENT
-                                                            UP TO 
-                                                            <b>40% OFF</b>
-                                                        </div>
-                                                        <div class="col-12 statBuyingSlidBtnOuter">
-                                                            <a href="javascript:;" class="statBuyingSlidBtn">Start Buying</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 rightPart">
-                                                    <div class="imgOuter imgOuter3">
-                                                        <img src="assets/img/slideImg/Sounddevice.png" class="w-100 h-100" alt="">
-                                                    </div>
-                                                </div>
-                                            </div> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-fluid cardSection">
-                        <div class="row">
-                            <div class="col-12 cardSectionInner">
-                                <div class="row">
-                                    <div class="col cardOuter">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-auto leftSide">
-                                                        <div class="imgOuter">
-                                                            <img src="assets/img/product/360-camers.png" class="h-100 w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col rightSide">
-                                                        <div class="row flex-column rightSideInner">
-                                                            <div class="col productHeading">
-                                                                Catch Big <b>Deals</b> on the Cameras
-                                                            </div>
-                                                            <div class="col shopNowUpto"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col cardOuter">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-auto leftSide">
-                                                        <div class="imgOuter">
-                                                            <img src="assets/img/product/360-camers.png" class="h-100 w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col rightSide">
-                                                        <div class="row flex-column rightSideInner">
-                                                            <div class="col productHeading">
-                                                                Catch Big <b>Deals</b> on the Cameras
-                                                            </div>
-                                                            <div class="col shopNowUpto"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col cardOuter">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-auto leftSide">
-                                                        <div class="imgOuter">
-                                                            <img src="assets/img/product/360-camers.png" class="h-100 w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col rightSide">
-                                                        <div class="row flex-column rightSideInner">
-                                                            <div class="col productHeading">
-                                                                Catch Big <b>Deals</b> on the Cameras
-                                                            </div>
-                                                            <div class="col shopNowUpto"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col cardOuter">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-auto leftSide">
-                                                        <div class="imgOuter">
-                                                            <img src="assets/img/product/360-camers.png" class="h-100 w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col rightSide">
-                                                        <div class="row flex-column rightSideInner">
-                                                            <div class="col productHeading">
-                                                                Catch Big <b>Deals</b> on the Cameras
-                                                            </div>
-                                                            <div class="col shopNowUpto"></div>
-                                                        </div>
-                                                    </div>
+                        <div class="container-fluid footerBottomBarFluid">
+                            <div class="container footerBottomBarContainer">
+                                <div class="footerBottomBar">
+                                    <div class="footerBottomBarPadding">
+                                        <div class="row align-items-center py-2 py-lg-0">
+                                            <div class="col-12 d-flex align-items-center justify-content-lg-between justify-content-center">
+                                                <div class="copyrytTxt">© <strong>Avone</strong> - All Rights Reserved</div>
+                                                <div class="paymemntblog d-lg-block d-none">
+                                                    <img src="assets/img/product/footer1.png" alt="" srcset="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1016,97 +1395,47 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </footer>
                 </div>
             </div>
         </main>
-        <!-- manu offcanvas -->
-        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
-            <div class="offcanvas-body p-0">
-                <ul class="m-0 p-0 list-unstyled">
-                    <li class="offcanvasLink">
-                        <a href="javascript:;" class="offcanvasAnchor">Value of the Day</a>
-                    </li>
-                    <li class="offcanvasLink">
-                        <a href="javascript:;" class="offcanvasAnchor">Top 100 Offers</a>
-                    </li>
-                    <li class="offcanvasLink">
-                        <a href="javascript:;" class="offcanvasAnchor">New Arrivals</a>
-                    </li>
-                    <li class="offcanvasLink">
-                        <a href="#menuCollapse1" class="offcanvasAnchor" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="menuCollapse1">Computer & Accessories
-                            <img src="./assets/img/svg/downArrow.svg" alt="arrow icon">
-                        </a>
-                        <div class="collapse" id="menuCollapse1">
-                            <ul class="m-0 p-0 list-unstyled">
-                                <li class="offcanvasLink">
-                                    <div  class="offcanvasAnchorHead">Value of the Day</div>
-                                </li> 
-                                <li class="offcanvasLink">
-                                    <a href="javascript:;" class="offcanvasInnerAnchor">Value of the Day</a>
-                                </li>
-                                <li class="offcanvasLink">
-                                    <a href="javascript:;" class="offcanvasInnerAnchor">Top 100 Offers</a>
-                                </li>
-                                <li class="offcanvasLink">
-                                    <a href="javascript:;" class="offcanvasInnerAnchor">New Arrivals</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="offcanvasLink">
-                        <a href="javascript:;" class="offcanvasAnchor">Value of the Day</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-        <script type="module" src="assets/js/main.min.js"></script>
+        <!-- <script type="module" src="assets/js/main.min.js"></script> -->
+        <!-- range js -->
         <script>
-            $(document).ready(function(){
-            $(".hero-carousel").owlCarousel({
-                loop: false,
-                items: 7,
-                margin: 20,
-                nav: false,
-                dots: true,
-                autoplay: false,
-                center: false,
-                freeDrag: false,
-                lazyLoad: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                smartSpeed: 3800,
-                responsiveClass: true,
-                animateIn: 'fadeIn',
-                animateOut: 'fadeOut',
-                responsive: {
-                    0: {
-                        items: 1,
-                        autoplay: true,
-                        loop: true,
-                        autoplayTimeout: 10000,
-                        touchDrag: false,
-                    },
-                    576: {
-                        items: 1,
-                    },
-                    768: {
-                    items: 1,
-                    },
-                    992: {
-                    items: 1,
-                    autoplay: false,
-                    loop: false,
-                    },
-                    1200: {
-                    items: 1,
-                },
-                },
-                // navText: ["", ""]
-            });
-            });
+            window.onload = function () {
+            slideOne();
+            slideTwo();
+            };
+
+            let sliderOne = document.getElementById("slider-1");
+            let sliderTwo = document.getElementById("slider-2");
+            let displayValOne = document.getElementById("range1");
+            let displayValTwo = document.getElementById("range2");
+            let minGap = 0;
+            let sliderTrack = document.querySelector(".slider-track");
+            let sliderMaxValue = document.getElementById("slider-1").max;
+
+            function slideOne() {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderOne.value = parseInt(sliderTwo.value) - minGap;
+            }
+            displayValOne.textContent = sliderOne.value;
+            fillColor();
+            }
+            function slideTwo() {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderTwo.value = parseInt(sliderOne.value) + minGap;
+            }
+            displayValTwo.textContent = sliderTwo.value;
+            fillColor();
+            }
+            function fillColor() {
+            percent1 = (sliderOne.value / sliderMaxValue) * 100;
+            percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+            sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #fed700 ${percent1}% , #fed700 ${percent2}%, #dadae5 ${percent2}%)`;
+            }
         </script>
+
     </body>
 </html>

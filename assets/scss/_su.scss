@@ -2,6 +2,7 @@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
         .heroSection {
+            min-height: 422px;
             background: url('../img/hero-banner/background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -381,7 +382,12 @@
                 & .tab-content {
                     & .tab-pane {
                         & .hero-carousel2 {
+                            & .owl-stage-outer {
+                                padding: 0;
+                            }
                             & .productCard {
+                                margin: 0;
+                                padding: 1em 0.5em;
                                 & .imgOuter {
                                     width: 120px;
                                     height: 120px;
@@ -419,6 +425,79 @@
                                         width: 30px;
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .recentlyAdded {
+            padding-bottom: 2rem;
+            & .sectionHeadingOuter {
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 0.875em;
+                & .sectionHeading {
+                    font-size: 1.571em;
+                    font-weight: 400;
+                    line-height: 1.6em;
+                    padding-bottom: 0.4em;
+                    position: relative;
+                    display: inline-block;
+                    &::after {
+                        content: ' ';
+                        border-bottom: 2px solid #fed700;
+                        display: block;
+                        position: absolute;
+                        bottom: -1px;
+                        width: 100%;
+                    }
+                }
+            }
+            & .hero-carousel3 {
+                position: relative;
+                & .owl-stage-outer {
+                    padding: 0;
+                    & .productCard  {
+                        margin: 0;
+                    }
+                }
+                & .owl-dots {
+                    padding-top: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & .owl-dot {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 5px;
+                        background-color: #bcbdbd;
+                        transition: all 0.3s ease-in-out;
+                        margin-left: 15px;
+                        &.active {
+                            background-color: #ffd600;
+                            width: 30px;
+                        }
+                    }
+                }
+                & .owl-nav {
+                    display: inline-block;
+                    width: auto;
+                    position: absolute;
+                    right: 0;
+                    left: auto;
+                    top: -50px;
+                    & button {
+                        &.disabled {
+                            cursor: default;
+                            &:hover {
+                                & img {
+                                    filter: none !important;
+                                }
+                            }
+                        }
+                        &:hover {
+                            & img {
+                                filter: brightness(0);
                             }
                         }
                     }
@@ -486,6 +565,7 @@
 
     @include media-breakpoint-down(xl) {
         .heroSection {
+            min-height: auto;
             & .sliderSection {
                 & .hero-carousel {
                     & .owl-stage-outer {
@@ -689,6 +769,7 @@
         .bestSellersSection {
             & .bestSellersSectionInner {
                 & .sectionHeadingOuter {
+                    border: none;
                     & .sectionHeading {
                         margin-right: 2rem !important;
                         &::after {                      
@@ -878,6 +959,87 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        .bestSellersSection {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            & .bestSellersSectionInner {
+                & .sectionHeadingOuter {
+                    & .sectionHeading {
+                        font-weight: 600;
+                        font-size: 17px;
+                        &::after {                       
+                        }
+                    }
+                    & .tabSection {
+                        & .nav-tabs {
+                            & .nav-item {
+                                &:first-child {
+                                }
+                                & .nav-link {
+                                    &.active {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .tab-content {
+                    & .tab-pane {
+                        & .hero-carousel2 {
+                            & .owl-stage-outer {
+                            }
+                            & .productCard {
+                                & .imgOuter {
+                                    & img {
+                                    }
+                                }
+                                & .hiddenBtn  {
+                                    & img {
+                                    }
+                                }
+                                & .compareBtn {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .owl-dots {
+                                display: none;
+                                & .owl-dot {
+                                    &.active {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .recentlyAdded {
+            padding-bottom: 1rem;
+            & .sectionHeadingOuter {
+                & .sectionHeading {
+                    font-weight: 600;
+                    font-size: 17px;
+                    &::after {
+                    }
+                }
+            }
+            & .hero-carousel3 {
+                & .owl-stage-outer {
+                    & .productCard  {
+                    }
+                }
+                & .owl-dots {
+                    display: none;
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+                & .owl-nav {
                 }
             }
         }
