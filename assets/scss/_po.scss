@@ -25,7 +25,21 @@
                     list-style: none;
                     text-decoration: none;
                     &:last-child {
-                        line-height: 1em;
+                        position: relative;
+                        // line-height: 1em;
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 0;
+                            border-top: 1px solid #ddd;
+                            margin-top: -1px;
+                            position: absolute;
+                            top: 1.071em;
+                            left: 0;
+                            background: white;
+                            height: 100%;
+                        }
                     }
                     & .storeDirectoryItemsLink {
                         padding: 0.4em 0;
@@ -33,7 +47,7 @@
                         font-weight: 700;
                         color: lighten($color: $black, $amount: 20);
                         &:last-child {
-                            padding-bottom: 0;
+                            // padding-bottom: 0;
                         }
                     }
                     &::before {
@@ -59,7 +73,19 @@
                             list-style: none;
                             text-decoration: none;
                             &:last-child {
-                                line-height: 1em;
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    width: 10px;
+                                    height: 0;
+                                    border-top: 1px solid #ddd;
+                                    margin-top: -1px;
+                                    position: absolute;
+                                    top: 1.071em;
+                                    left: 0;
+                                    background: white;
+                                    height: 100%;
+                                }
                             }
                             & .storeDirectorySubItemsLink {
                                 padding: 0.4em 0;
@@ -67,7 +93,7 @@
                                 font-weight: 400;
                                 color: lighten($color: $black, $amount: 20);
                                 &:last-child {
-                                    padding-bottom: 0;
+                                    // padding-bottom: 0;
                                 }
                             }
                             &::before {
@@ -85,11 +111,13 @@
                         &::before {
                             content: "";
                             display: block;
-                            width: 0;
+                            width: 1px;
+                            // background-color: #ddd;
                             position: absolute;
                             top: 0;
                             bottom: 0;
                             left: 0;
+                            // height: calc(100% - 1rem);
                             border-left: 1px solid #ddd;
                         }
                     }
@@ -121,15 +149,222 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        .storeDirectoryHeading {
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .storeDirectoryHeading {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .storeDirectoryHeading {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .storeDirectoryHeading {
+            font-size: 24px;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .storeDirectoryHeading {
+            font-size: 20px;
+        }
+        .storeDirectoryListing {
+            hr{
+            }
+            & .storeDirectoryItem {
+                & .storeDirectoryItems {
+                    &:last-child {
+                        &::before {
+                        }
+                    }
+                    & .storeDirectoryItemsLink {
+                        &:last-child {
+                        }
+                    }
+                    &::before {
+                    }
+                    & .storeDirectorySubItem {
+                        & .storeDirectorySubItems {
+                            &:last-child {
+                                &::before {
+                                }
+                            }
+                            & .storeDirectorySubItemsLink {
+                                &:last-child {
+                                }
+                            }
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                &::before {
+                }
+                
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {
