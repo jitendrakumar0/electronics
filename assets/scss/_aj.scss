@@ -369,10 +369,21 @@
         .brandsSlider{
             & .brandouter {
                 width: 180px;
+                display: block;
                 & img {
+                    filter: opacity(0.5);
+                    transition: ease-in-out .3s;
+                }
+                &:hover {
+                    & img {
+                        filter: none;
+                    }
                 }
             }
             & .allBrandsSlider  {
+                & .owl-stage-outer {
+                    padding-right: 0;
+                }
                 & .owl-nav{
                     & .owl-prev, & .owl-next {
                         position: absolute;
@@ -903,7 +914,7 @@
                         & .ratingList {
                         }
                         & .customerRating {
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                     }
                     & .brandingLogo {
@@ -912,12 +923,12 @@
                     & .productFithur {
                         & ul {
                             & li {
-                                font-size: 12px;
+                                font-size: 14px;
                             }
                         }
                     }
                     & .productDiscuription {
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                     & .productCode {
                         font-size: 14px;
@@ -925,7 +936,7 @@
                 }
                 & .offerDetails {
                     & .availabilityProduct {
-                        font-size: 12px;
+                        font-size: 14px;
                         border-bottom: 1px solid rgba($secondary, 0.2);
                     }
                     & .productValue {
@@ -933,17 +944,17 @@
                     }
                     & .chouseInputBtn {
                         &  input{
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                     }
                     & .addCart {
                         & .addCartBtn {
-                            font-size: 12px;
+                            font-size: 14px;
                             &:hover{
                             }
                         }
                         & .payLinkBtn {
-                            font-size: 12px;
+                            font-size: 14px;
                             &:hover {
                             }
                         }
@@ -957,7 +968,7 @@
                     }
                     & .morebuttons {
                         & a {
-                            font-size: 10px;
+                            font-size: 12px;
                             & img {
                                 width: 14px;
                             }
@@ -978,7 +989,7 @@
                         }
                         & .nav-item {
                             & .nav-link{
-                                font-size: 12px;
+                                font-size: 14px;
                                 &::before {
                                 }
                                 &.active {
@@ -1019,10 +1030,10 @@
                                         right: 0;
                                     }
                                     & .productType {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                     }
                                     & .productName {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                     }
                                     & .imgOuter {
                                     }
@@ -1035,13 +1046,13 @@
                                     max-width: 320px;
                                     margin: 0 auto;
                                     & .totalValue{
-                                        font-size: 16px;
+                                        font-size: 18px;
                                     }
                                     & .totalItem {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                     }
                                     & .addAll {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                         &:hover {
                                         }
                                     }
@@ -1056,7 +1067,7 @@
                                         }
                                     }
                                     & .form-check-label {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                         font-weight: 400 !important;
                                     }
                                 }
@@ -1094,13 +1105,13 @@
                         }
                         & .reviewMain {
                             & .title {
-                                font-size: 14px;
+                                font-size: 16px;
                             }
                             & .totalReview {
                                 & .overAllRating{
                                     font-size: 20px;
                                     & .txt {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                     }
                                 }
                                 & .viewReview{
@@ -1118,7 +1129,7 @@
                             }
                             & .writeReview{
                                 & .ratingTitle{
-                                    font-size: 12px;
+                                    font-size: 14px;
                                 }
                                 & .ratingStar {
                                     & .rating-box {
@@ -1135,15 +1146,15 @@
                                 }
                                 & .contentSide {
                                     & .form-control {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                     }
                                     & .form-check {
                                         & .form-check-label {
-                                            font-size: 12px;
+                                            font-size: 14px;
                                         }
                                     }
                                     & .addReviewBtn {
-                                        font-size: 12px;
+                                        font-size: 14px;
                                         &:hover {
                                         }
                                     }
@@ -1157,10 +1168,10 @@
                                 & .reviewStars {
                                 }
                                 & .comment {
-                                    font-size: 12px;
+                                    font-size: 14px;
                                 }
                                 & .reviewBy {
-                                    font-size: 12px;
+                                    font-size: 14px;
                                     & .reviewDate {
                                     }
                                 }
@@ -1204,3 +1215,21 @@
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 
+
+
+figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  figure.zoom img:hover {
+    opacity: 0;
+  }
+  figure.zoom img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+  }
+  
