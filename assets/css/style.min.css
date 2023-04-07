@@ -1238,6 +1238,44 @@ body .overflow-auto-hidden {
 .footerBottomBarFluid .footerBottomBarContainer .footerBottomBar .footerBottomBarPadding .copyrytTxt {
   color: #000;
 }
+.newsletterFluid {
+  background-color: #fed700;
+  width: 100%;
+}
+.newsletterFluid .newsletterContainer {
+  padding: 10px;
+}
+.newsletterFluid .newsletterContainer .newsletterTxt1 {
+  font-size: 20px;
+}
+.newsletterFluid .newsletterContainer .newsletterTxt1 img {
+  height: 20px;
+  margin-right: 15px;
+}
+.newsletterFluid .newsletterContainer .newsletterTxt2 {
+  margin-right: 5px;
+}
+.newsletterFluid .newsletterContainer .newsletterinp {
+  border-radius: 1.571em;
+  box-shadow: none !important;
+  border-color: white !important;
+  padding: 0.734em 2em;
+  height: 41px;
+  font-size: 16px;
+}
+.newsletterFluid .newsletterContainer .newsletterBtn {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-right-radius: 1.571em;
+  border-top-right-radius: 1.571em;
+  height: 41px;
+  width: 91px;
+  font-size: 16px;
+}
+
 @media (max-width: 991.98px) {
   .last {
     margin-bottom: 20px;
