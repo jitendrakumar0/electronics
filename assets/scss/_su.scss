@@ -2,6 +2,7 @@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
         .heroSection {
+            min-height: 422px;
             background: url('../img/hero-banner/background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -564,6 +565,7 @@
 
     @include media-breakpoint-down(xl) {
         .heroSection {
+            min-height: auto;
             & .sliderSection {
                 & .hero-carousel {
                     & .owl-stage-outer {
