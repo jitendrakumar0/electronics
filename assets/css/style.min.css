@@ -1524,6 +1524,9 @@ body .overflow-auto-hidden {
     font-size: 12px;
     line-height: 22px;
   }
+  .featuredSectionBox .productDetailBox .productNameAnchor {
+    font-size: 0.9rem;
+  }
   .last {
     margin-bottom: 20px;
   }
